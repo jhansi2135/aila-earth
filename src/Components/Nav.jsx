@@ -9,7 +9,7 @@ export function Nav() {
       </a>
       <a href="#">Resources</a>
       <a href="#">About</a>
-      <a href="#">Marketplace</a>
+      <a href="#Market">Marketplace</a>
       <a href="#">Calculate</a>
     </div>
   );
