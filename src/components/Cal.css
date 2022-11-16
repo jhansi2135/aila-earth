@@ -1,9 +1,7 @@
-* {
-  padding: 20px;
-}
 .cal {
   background-color: #f8f1ff;
   color: black;
+  padding: 70px;
 }
 #num {
   font-size: 54.9px;
