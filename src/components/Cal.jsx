@@ -14,7 +14,7 @@ export function Cal() {
       </p>
 
       <p id="num1">
-        <b>How does Aila platform work</b>
+        <b>How does Aila platform work?</b>
       </p>
       <div className="icon">
         <div className="icon1">
