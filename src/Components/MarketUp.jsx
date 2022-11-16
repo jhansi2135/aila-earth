@@ -8,7 +8,8 @@ export function MarketUp() {
         Remove CO<sub>2</sub> emissions now
       </h2>
       <div className="Search">
-        <input type="text" />
+        <input type="text" placeholder="Search.." />
+        <button>Search</button>
       </div>
       <img src={Icons} alt="icon" />
     </div>
