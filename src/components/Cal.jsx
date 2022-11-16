@@ -6,10 +6,16 @@ import Act from "./Act.png";
 export function Cal() {
   return (
     <div className="cal">
-      <p id="num"> 186000 t. </p>
-      <p id="num">co2e reduced by Aila </p>
+      <p id="num">
+        {" "}
+        <b>186000 t. </b>
+        <br />
+        <b>co2e reduced by Aila </b>
+      </p>
 
-      <p id="num1">How does Aila platform work</p>
+      <p id="num1">
+        <b>How does Aila platform work</b>
+      </p>
       <div className="icon">
         <div className="icon1">
           <img src={Learn} type=".png" alt="icon" />
