@@ -1,0 +1,9 @@
+.SupplierN {
+  border: 3px solid black;
+  width: 200px;
+  height: 300px;
+}
+.SupplierN img {
+  width: 200px;
+  height: 40%;
+}

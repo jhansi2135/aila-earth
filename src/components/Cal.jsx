@@ -7,12 +7,10 @@ export function Cal() {
   return (
     <div className="cal">
       <p id="num">
-        {" "}
         <b>186000 t. </b>
         <br />
         <b>co2e reduced by Aila </b>
       </p>
-
       <p id="num1">
         <b>How does Aila platform work?</b>
       </p>
