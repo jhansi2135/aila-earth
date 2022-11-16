@@ -1,0 +1,20 @@
+.Nav {
+  background-color: white;
+  color: black;
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  position: fixed;
+  right: 2px;
+}
+#now {
+  color: #ff6648;
+}
+.Nav a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px;
+  padding: 5px;
+  width: auto;
+  color: black;
+}
