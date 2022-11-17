@@ -1,6 +1,7 @@
 .MarketDown {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  padding: 100px;
+  padding: 0 0 100px 0;
   margin: 0;
 }

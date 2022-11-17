@@ -1,11 +1,12 @@
 .MarketUp {
-  padding: 50px;
+  padding: 50px 50px 0 50px;
   color: white;
   font-size: 44.5px;
 }
 .MarketUp img {
   width: 70%;
-  height: 20%;
+  height: 400px;
+  border: 1px solid black;
 }
 .Search {
   border-radius: 7px;
