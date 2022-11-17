@@ -11,7 +11,9 @@ export function MarketUp() {
         <input type="text" />
         <button>Search</button>
       </div>
-      <img src={Icons} alt="icon" />
+      <div className="img">
+        <img src={Icons} alt="icon" />
+      </div>
     </div>
   );
 }
