@@ -1,10 +1,32 @@
 .SupplierN {
   width: 200px;
-  height: 300px;
+  height: 315px;
+  background-color: white;
+  flex-basis: 200px;
+  margin: 5%;
 }
 .SupplierN img {
   width: 200px;
   height: 40%;
   padding: 0;
   margin: 0;
+}
+.SupplierN p {
+  font-size: small;
+  padding-top: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0;
+}
+.SupplierN .p1 {
+  font-weight: bolder;
+}
+.SupplierN .p2 {
+  font-weight: bold;
+}
+.SupplierN a {
+  padding-bottom: 5px;
+}
+a {
+  text-decoration: none;
 }

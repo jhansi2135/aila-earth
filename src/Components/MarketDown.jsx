@@ -22,33 +22,31 @@ export function MarketDown() {
   };
   return (
     <div className="MarketDown">
+      <SupplierN
+        src={Supplier1}
+        alt="Supplier1"
+        text1="Energy Company A"
+        text2="Renewable electricity"
+        text3="Energy Company A offers competitively priced electricity contracts based on renewable sources that include solar power, wind power, hydropower and bioenergy."
+      />
+      <SupplierN
+        src={Supplier2}
+        alt="Supplier2"
+        text1="Oil Refining Company B"
+        text2="Renewable fuel"
+        text3="Oil Refining Company A produces renewable diesel made from previously used materials or from oil extracted from plants that can re-absorb CO2 from the air through photosynthesis."
+      />
+      <SupplierN
+        src={Supplier3}
+        alt="Supplier3"
+        text1="Cloud Company A"
+        text2="Green Digital services"
+        text3="Cloud Company A offers reliable and greener cloud services. They are more energy efficient than a typical data center by re-using the heat the servers produce, replacing fossil fuels."
+      />
       {more ? (
-        <>
-          <SupplierN
-            src={Supplier1}
-            alt="Supplier1"
-            text1="Energy Company A"
-            text2="Renewable electricity"
-            text3="Energy Company A offers competitively priced electricity contracts based on renewable sources that include solar power, wind power, hydropower and bioenergy."
-          />
-          <SupplierN
-            src={Supplier2}
-            alt="Supplier2"
-            text1="Oil Refining Company B"
-            text2="Renewable fuel"
-            text3="Oil Refining Company A produces renewable diesel made from previously used materials or from oil extracted from plants that can re-absorb CO2 from the air through photosynthesis."
-          />
-          <SupplierN
-            src={Supplier3}
-            alt="Supplier3"
-            text1="Cloud Company A"
-            text2="Green Digital services"
-            text3="Cloud Company A offers reliable and greener cloud services. They are more energy efficient than a typical data center by re-using the heat the servers produce, replacing fossil fuels."
-          />
-          <p type="button" onClick={handleMoreClick}>
-            + more
-          </p>
-        </>
+        <p id="more" type="button" onClick={handleMoreClick}>
+          + more
+        </p>
       ) : (
         <>
           <SupplierN
@@ -93,9 +91,9 @@ export function MarketDown() {
             text2="LED lighting "
             text3="Lighting Company A offers services for well-designed LED lighting and its intelligent control, improving the energy efficiency and saving saving up to 70-80 percent in lighting costs."
           />
-          <p type="button" onClick={handleLessClick}>
+          <p id="more" type="button" onClick={handleLessClick}>
             - less
-          </p>{" "}
+          </p>
         </>
       )}
     </div>
