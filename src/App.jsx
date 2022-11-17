@@ -1,17 +1,18 @@
 import "./App.css";
-import { Nav } from "./Components/Nav.jsx";
-import { Cal } from "./Components/Cal.jsx";
-import { Image } from "./Components/Image.jsx";
-import { Market } from "./Components/Market.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home } from "./Components/Home.jsx";
+import { ReadMoreAndAct } from "./Components/ReadMoreAndAct.jsx";
+import { LogIn } from "./Components/LogIn.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
-      <Image />
-      <Cal />
-      <Market />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/ReadMoreAndAct" element={<ReadMoreAndAct />}></Route>
+        <Route path="/LogIn" element={<LogIn />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

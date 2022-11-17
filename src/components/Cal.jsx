@@ -5,7 +5,7 @@ import Act from "./Act.png";
 
 export function Cal() {
   return (
-    <div className="cal">
+    <div className="Cal">
       <p id="num">
         <b>186000 t. </b>
         <br />

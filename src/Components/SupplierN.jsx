@@ -1,4 +1,5 @@
 import "./SupplierN.css";
+import { Link } from "react-router-dom";
 
 export function SupplierN(props) {
   return (
@@ -8,7 +9,7 @@ export function SupplierN(props) {
         <p className="p1">{props.text1}</p>
         <p className="p2">{props.text2}</p>
         <p className="p3">{props.text3}</p>
-        <a href="#">Read more & Act</a>
+        <Link to="/ReadMoreAndAct">Read more & Act</Link>
       </div>
     </div>
   );
