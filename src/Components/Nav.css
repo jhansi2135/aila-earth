@@ -17,3 +17,6 @@
   width: auto;
   color: black;
 }
+.Nav a:hover {
+  color: #ff6648;
+}
