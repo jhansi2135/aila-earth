@@ -9,7 +9,7 @@ export function SupplierN(props) {
         <p className="p1">{props.text1}</p>
         <p className="p2">{props.text2}</p>
         <p className="p3">{props.text3}</p>
-        <Link to="/ReadMoreAndAct">Read more & Act</Link>
+        <Link to={props.to}>Read more & Act</Link>
       </div>
     </div>
   );
