@@ -8,8 +8,8 @@ export function Nav() {
       <Link id="now" to="/">
         Get Started
       </Link>
-      <a href="#Calculate">Resources</a>
-      <a href="#Calculate">About</a>
+      <Link to="/Resources">Resources</Link>
+      <Link to="/About">About</Link>
       <a href="#Market">Marketplace</a>
       <a href="#Calculate">Calculate</a>
     </div>
