@@ -24,7 +24,6 @@ export function Cal() {
             climate health index of the company.
           </p>
         </div>
-
         <div className="icon1">
           <a href="#Market">
             <img src={Act} type=".png" alt="icon" />
@@ -37,7 +36,6 @@ export function Cal() {
             impact overtime.
           </p>
         </div>
-
         <div className="icon1">
           <img src={Attract} type=".png" alt="icon" />
           <br /> <br />
