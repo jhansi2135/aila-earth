@@ -1,0 +1,17 @@
+.ChooseLogIn {
+  display: flex;
+}
+#one,
+#two {
+  width: 50%;
+  height: 100vh;
+  font-size: 30px;
+  align-self: center;
+}
+#one {
+  background-color: #99599c;
+  color: white;
+}
+#two {
+  color: #99599c;
+}
