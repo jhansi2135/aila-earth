@@ -7,10 +7,11 @@
 }
 .MarketDown #more {
   cursor: pointer;
-  color: #ff6648;
+  color: azure;
   width: 200px;
   height: 30px;
   margin: 20px 4% 0 4%;
+  background-color: rgb(155, 141, 231);
 }
 @media only screen and (max-width: 875px) and (min-width: 500px) {
   .MarketDown #more {

@@ -1,0 +1,40 @@
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+.LogIn {
+  text-align: center;
+  border: 1px solid black;
+  margin: 40px auto;
+  border-radius: 25px;
+  width: 380px;
+  height: 400px;
+  padding: 20px;
+}
+#email {
+  border-radius: 25px;
+  border: 1px solid black;
+  width: 250px;
+}
+#password {
+  border-radius: 25px;
+  border: 1px solid black;
+  width: 250px;
+}
+#btn {
+  background-color: rgb(19, 93, 196);
+  color: white;
+  margin: 5px;
+  padding: 4px;
+  width: 100px;
+  height: 40px;
+  border-radius: 6px;
+}
+#btn:hover {
+  background-color: rgba(65, 89, 171, 0.395);
+}
+
+#sign {
+  text-align: start;
+  text-decoration-line: underline;
+}

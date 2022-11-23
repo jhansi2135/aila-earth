@@ -48,7 +48,7 @@ export function MarketDown() {
       />
       {more ? (
         <p id="more" type="button" onClick={handleMoreClick}>
-          + more
+          + Showmore
         </p>
       ) : (
         <>
@@ -101,7 +101,7 @@ export function MarketDown() {
             text3="Lighting Company A offers services for well-designed LED lighting and its intelligent control, improving the energy efficiency and saving saving up to 70-80 percent in lighting costs."
           />
           <p id="more" type="button" onClick={handleLessClick}>
-            - less
+            - Showless
           </p>
         </>
       )}
