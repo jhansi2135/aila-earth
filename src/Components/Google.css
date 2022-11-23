@@ -1,0 +1,6 @@
+.Google button {
+  border-radius: 0;
+  width: fit-content;
+  font-weight: bold;
+  cursor: pointer;
+}
