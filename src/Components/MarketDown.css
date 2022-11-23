@@ -5,6 +5,10 @@
   padding: 0 0 100px 0;
   margin: 0;
 }
+#more > img {
+  width: 30px;
+  height: 30px;
+}
 .MarketDown #more {
   cursor: pointer;
   color: #ff6648;

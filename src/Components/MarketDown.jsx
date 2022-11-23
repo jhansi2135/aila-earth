@@ -1,6 +1,8 @@
 import "./MarketDown.css";
 import { SupplierN } from "./SupplierN";
 import { useState } from "react";
+import More from "./More.png";
+import Less from "./Less.png";
 import Supplier1 from "./Supplier1.png";
 import Supplier2 from "./Supplier2.png";
 import Supplier3 from "./Supplier3.png";
@@ -47,9 +49,9 @@ export function MarketDown() {
         text3="Cloud Company A offers reliable and greener cloud services. They are more energy efficient than a typical data center by re-using the heat the servers produce, replacing fossil fuels."
       />
       {more ? (
-        <p id="more" type="button" onClick={handleMoreClick}>
-          + more
-        </p>
+        <div id="more">
+          <img src={More} alt="more" onClick={handleMoreClick} />
+        </div>
       ) : (
         <>
           <SupplierN
@@ -100,9 +102,9 @@ export function MarketDown() {
             text2="LED lighting "
             text3="Lighting Company A offers services for well-designed LED lighting and its intelligent control, improving the energy efficiency and saving saving up to 70-80 percent in lighting costs."
           />
-          <p id="more" type="button" onClick={handleLessClick}>
-            - less
-          </p>
+          <div id="more">
+            <img src={Less} alt="less" onClick={handleLessClick} />
+          </div>
         </>
       )}
     </div>
