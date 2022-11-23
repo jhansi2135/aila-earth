@@ -1,40 +1,22 @@
 import "./SignIn.css";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { LogIn } from "./LogIn.jsx";
+import { Google } from "./Google.jsx";
 
 export function SignIn() {
   const [email, setEmail] = useState("");
-  useEffect(() => {
-    const json = localStorage.getItem("email");
-    json && setEmail(JSON.parse(json));
-  }, []);
-  const [password, setPassword] = useState("");
-  useEffect(() => {
-    const json = localStorage.getItem("password");
-    json && setPassword(JSON.parse(json));
-  }, []);
-  const handleEmailChange = function (event) {
-    const newEmail = event.target.value;
-    setEmail(newEmail);
-    try {
-      const json = JSON.stringify(newEmail);
-      localStorage.setItem("email", json);
-    } catch (error) {
-      console.error("Could not save email", error);
-    }
 
-    const handlePasswordChange = function (event) {
-      const newPassword = event.target.value;
-      setPassword(newPassword);
-      try {
-        const json = JSON.stringify(newPassword);
-        localStorage.setItem("password", json);
-      } catch (error) {
-        console.error("Could not save password", error);
-      }
-    };
+  const [password, setPassword] = useState("");
+
+  const handleEmailChange = function (event) {
+    setEmail(event.target.value);
   };
+
+  const handlePasswordChange = function (event) {
+    setPassword(event.target.value);
+  };
+
   return (
     <div className="LogIn">
       <h1>Login</h1>
@@ -45,8 +27,9 @@ export function SignIn() {
         id="email"
         name="email"
         type="email"
+        value={email}
         placeholder="Enter your Email... "
-        onChange={(e) => setEmail(e.target.value)}
+        onChange={handleEmailChange}
         required
       />
       <br />
@@ -56,8 +39,9 @@ export function SignIn() {
         id="password"
         name="password"
         type="password"
+        value={password}
         placeholder="Enter your Password..."
-        onChange={(e) => setPassword(e.target.value)}
+        onChange={handlePasswordChange}
         required
       />
       <br />
@@ -70,10 +54,10 @@ export function SignIn() {
       <br />
       <br />
       <Link id="sign" to="/SignUp">
-        No Account yet?CreateOne SignUp
+        No Account yet? Create One SignUp
       </Link>
       <div>
-        <Link to="/Google"></Link>
+        <Google />
       </div>
     </div>
   );
