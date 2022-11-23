@@ -8,10 +8,10 @@ export function Nav() {
       <Link id="now" to="/">
         Get Started
       </Link>
-      <a href="#">Resources</a>
-      <a href="#">About</a>
+      <Link to="/Resources">Resources</Link>
+      <Link to="/About">About</Link>
       <a href="#Market">Marketplace</a>
-      <a href="#">Calculate</a>
+      <a href="#Calculate">Calculate</a>
     </div>
   );
 }

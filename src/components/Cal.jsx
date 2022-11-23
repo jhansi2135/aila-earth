@@ -2,10 +2,12 @@ import "./Cal.css";
 import Learn from "./Learn.png";
 import Attract from "./Attract.png";
 import Act from "./Act.png";
+import CO2 from "./CO2.png";
 
 export function Cal() {
   return (
     <div className="Cal">
+      <img src={CO2} alt="icon" />
       <p id="num">
         <b>186000 t. </b>
         <br />
@@ -16,7 +18,7 @@ export function Cal() {
       </p>
       <div className="icon">
         <div className="icon1">
-          <img src={Learn} type=".png" alt="icon" />
+          <img src={Learn} alt="icon" />
           <br /> <br />
           <a href="#">Learn</a>
           <p>
@@ -24,10 +26,9 @@ export function Cal() {
             climate health index of the company.
           </p>
         </div>
-
         <div className="icon1">
           <a href="#Market">
-            <img src={Act} type=".png" alt="icon" />
+            <img src={Act} alt="icon" />
             <br /> <br />
             Act
           </a>
@@ -37,9 +38,8 @@ export function Cal() {
             impact overtime.
           </p>
         </div>
-
         <div className="icon1">
-          <img src={Attract} type=".png" alt="icon" />
+          <img src={Attract} alt="icon" />
           <br /> <br />
           <a href="#">Attract</a>
           <p>

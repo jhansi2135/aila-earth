@@ -4,10 +4,15 @@
   padding: 70px;
 }
 #num {
+  margin: 0;
+  padding: 0;
   font-size: 54.9px;
 }
 #num1 {
   font-size: 54.9px;
+}
+.Cal > img {
+  margin-bottom: 20px;
 }
 
 .icon {
