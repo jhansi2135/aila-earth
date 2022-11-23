@@ -73,7 +73,7 @@ export function MarketDown() {
           <SupplierN
             src={Supplier6}
             alt="Supplier6"
-            to="/ReadMoreAndAct"
+            to="/ReadMoreAndAct6"
             text1="Mobility Company A"
             text2="Electric car leasing"
             text3="With Mobility Company A's  mobile application, you get access to hundreds of electric cars in the city, help reduce CO2, pollution and noise, and avoid the cost of owning them yourself."
