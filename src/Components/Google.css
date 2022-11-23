@@ -1,6 +1,6 @@
-.Google button {
-  border-radius: 0;
+.Google {
+  border: 1px solid black;
   width: fit-content;
-  font-weight: bold;
-  cursor: pointer;
+  position: relative;
+  left: 230px;
 }
