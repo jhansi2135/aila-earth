@@ -7,15 +7,26 @@ export function LogIn() {
     <div className="LogIn">
       <div id="one">
         <h1>User LogIn</h1>
-        <input type="text" name="email" placeholder="Enter your Email" />
+        <input
+          type="text"
+          name="email"
+          placeholder="Enter your Email"
+          required
+        />
         <br />
-        <input type="text" name="password" placeholder="Enter your Password" />
+        <input
+          type="text"
+          name="password"
+          placeholder="Enter your Password"
+          required
+        />
         <br />
         <Link to="">
           <input type="button" value="LogIn" />
         </Link>
+        <p id="simp">or</p>
         <Google />
-        <Link to="">
+        <Link to="/Register_User">
           <p>Create Account (if you aren't registered)</p>
         </Link>
       </div>
@@ -28,8 +39,9 @@ export function LogIn() {
         <Link to="">
           <input type="button" value="LogIn" />
         </Link>
+        <p id="simp">or</p>
         <Google />
-        <Link to="">
+        <Link to="/Register_Partner">
           <p>Create Account (if you aren't registered)</p>
         </Link>
       </div>

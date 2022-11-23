@@ -25,6 +25,7 @@
 input[type="button"] {
   width: fit-content;
   border-radius: 10px;
+  cursor: pointer;
 }
 #one input[type="button"] {
   color: #99599c;
@@ -42,4 +43,8 @@ input[type="button"] {
 .LogIn p {
   font-size: 20px;
   text-decoration: underline;
+}
+#simp {
+  text-decoration: none;
+  margin-top: 0;
 }
