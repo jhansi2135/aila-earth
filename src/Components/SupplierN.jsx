@@ -12,10 +12,9 @@ export function SupplierN(props) {
   };
 
   useEffect(() => {
-    console.log("useEffect");
     fetchData();
   }, []);
-  console.log("details", details);
+
   return (
     <>
       {details &&

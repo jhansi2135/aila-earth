@@ -24,6 +24,9 @@
 .SupplierN .p2 {
   font-weight: bold;
 }
+.SupplierN .p3 {
+  text-align: center;
+}
 .SupplierN a {
   padding-bottom: 5px;
 }

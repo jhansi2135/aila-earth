@@ -18,9 +18,11 @@ export function Cal() {
       </p>
       <div className="icon">
         <div className="icon1">
-          <img src={Learn} alt="icon" />
-          <br /> <br />
-          <a href="#Calculate">Learn</a>
+          <a href="#Calculate">
+            <img src={Learn} alt="icon" />
+            <br /> <br />
+            Learn
+          </a>
           <p>
             With automated emission accounting protocol. Results reveal the
             climate health index of the company.
@@ -39,9 +41,11 @@ export function Cal() {
           </p>
         </div>
         <div className="icon1">
-          <img src={Attract} alt="icon" />
-          <br /> <br />
-          <a href="#Calculate">Attract</a>
+          <a href="#Calculate">
+            <img src={Attract} alt="icon" />
+            <br /> <br />
+            Attract
+          </a>
           <p>
             Through a marketplace that offers a fast and efficient way to shrink
             carbon footprint by switching to green goods and services.

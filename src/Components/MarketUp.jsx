@@ -1,5 +1,10 @@
 import "./MarketUp.css";
-import Icons from "./Icons.png";
+import Electricity from "./Electricity.png";
+import TransportationLogistics from "./TransportationLogistics.png";
+import Foods from "./Foods.png";
+import DigitalServices from "./DigitalServices.png";
+import GreenSupplies from "./GreenSupplies.png";
+import WasteManagement from "./WasteManagement.png";
 
 export function MarketUp() {
   return (
@@ -12,7 +17,30 @@ export function MarketUp() {
         <button>Search</button>
       </div>
       <div className="img">
-        <img src={Icons} alt="icon" />
+        <div className="icon">
+          <img src={Electricity} alt="Electricity" />
+          <p>Electricity</p>
+        </div>
+        <div className="icon">
+          <img src={TransportationLogistics} alt="TransportationLogistics" />
+          <p>Transportation & Logistics</p>
+        </div>
+        <div className="icon">
+          <img src={Foods} alt="Foods" />
+          <p>Foods</p>
+        </div>
+        <div className="icon">
+          <img src={DigitalServices} alt="Digital Services" />
+          <p>Digital Services</p>
+        </div>
+        <div className="icon">
+          <img src={GreenSupplies} alt="Green Supplies" />
+          <p>Green Supplies</p>
+        </div>
+        <div className="icon">
+          <img src={WasteManagement} alt="Waste Management" />
+          <p>Waste Management</p>
+        </div>
       </div>
     </div>
   );

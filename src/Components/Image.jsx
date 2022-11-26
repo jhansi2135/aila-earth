@@ -14,11 +14,8 @@ export function Image() {
           helping SMEs to take direct climate actions
           <br />
           <br />
-          Start your green transition now, visit our{" "}
-          <a id="now" href="#Market">
-            marketplace
-          </a>
-          .
+          Start your green transition now, visit our 
+          <a id="now" href="#Market"> marketplace</a>
         </b>
       </p>
     </div>

@@ -3,37 +3,38 @@
   color: black;
   padding: 70px;
 }
-#num {
+.Cal #num {
   margin: 0;
   padding: 0;
   font-size: 54.9px;
 }
-#num1 {
+.Cal #num1 {
   font-size: 54.9px;
 }
 .Cal > img {
   margin-bottom: 20px;
 }
 
-.icon {
+.Cal .icon {
   display: flex;
   justify-content: space-evenly;
+  margin: 5%;
 }
-img {
+.Cal img {
   height: 100px;
   width: 100px;
 }
-.icon1 {
-  width: 30%;
+.Cal .icon1 {
+  width: 25%;
 }
 .icon a {
   text-align: center;
 }
 .icon1 p {
-  text-align: center;
+  width: 250px;
+  text-align: justify;
   color: #502bd6;
 }
-
 div a {
   color: #ff6648;
 }
