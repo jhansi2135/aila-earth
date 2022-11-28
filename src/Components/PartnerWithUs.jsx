@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./PartnerWithUs.css";
 
 export function PartnerWithUs() {
   return (
@@ -37,10 +38,10 @@ export function PartnerWithUs() {
         </label>
         <label for="partner-tell-us">
           Tell us more about the company and products
-          <input id="partner-tell-us" type="text" />
+          <textarea id="partner-tell-us" name="partner-tell-us"></textarea>
         </label>
         <Link to="/partner-with-us/confirmation">
-          <input id="btn-g" type="button" value="SUBMIT" />
+          <button id="btn-p">SUBMIT</button>
         </Link>
       </div>
       <div className="b">

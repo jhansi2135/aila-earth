@@ -1,15 +1,15 @@
-.GetStarted {
+.PartnerWithUs {
   display: flex;
   flex-direction: row;
 }
-.GetStarted .a {
+.PartnerWithUs .a {
   width: 70%;
   padding: 50px 80px;
   font-weight: 500;
 }
-.GetStarted .b {
+.PartnerWithUs .b {
   width: 30%;
-  padding: 10% 15%;
+  padding: 10% 15% 0;
   font-weight: bolder;
   color: white;
   background-image: linear-gradient(150deg, orange, purple);
@@ -28,39 +28,25 @@
   border-radius: 30px;
   float: right;
 }
-#ag {
-  margin: 0 50px;
-  display: inline;
+#partner-tell-us {
+  display: block;
+  margin: 5px;
+  width: 500px;
+  height: 70px;
+  padding: 12px;
+  border-radius: 30px;
 }
-#user-agree {
-  float: none;
-  width: 12px;
-  margin-right: 20px;
-  position: relative;
-  top: 7px;
-}
-#btn-g,
-#btn-g1 {
-  margin: 20px 140px;
+#btn-p {
+  margin: 120px 140px;
   width: 200px;
   height: 35px;
   border-radius: 30px;
   font-weight: 700;
   cursor: pointer;
-}
-#btn-g1 {
   background-image: linear-gradient(
     90deg,
     rgb(93, 16, 216),
     rgb(224, 160, 224)
   );
   color: white;
-}
-#btn-g {
-  border: 1px solid black;
-  background-color: white;
-}
-.a #p-g {
-  margin: auto;
-  text-align: center;
 }
