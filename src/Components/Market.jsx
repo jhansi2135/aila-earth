@@ -4,7 +4,7 @@ import { MarketDown } from "./MarketDown.jsx";
 
 export function Market() {
   return (
-    <div id="Market">
+    <div id="marketplace">
       <MarketUp />
       <MarketDown />
     </div>

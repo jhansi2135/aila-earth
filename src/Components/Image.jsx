@@ -15,7 +15,7 @@ export function Image() {
           <br />
           <br />
           Start your green transition now, visit our 
-          <a id="now" href="#Market"> marketplace</a>
+          <a id="now" href="#marketplace"> marketplace</a>
         </b>
       </p>
     </div>

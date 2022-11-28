@@ -1,6 +1,4 @@
 import "./LogIn.css";
-import { Google } from "./Google.jsx";
-import { Link } from "react-router-dom";
 
 export function LogIn() {
   return (

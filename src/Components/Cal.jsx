@@ -3,6 +3,7 @@ import Learn from "./Learn.png";
 import Attract from "./Attract.png";
 import Act from "./Act.png";
 import CO2 from "./CO2.png";
+import { Link } from "react-router-dom";
 
 export function Cal() {
   return (
@@ -18,11 +19,11 @@ export function Cal() {
       </p>
       <div className="icon">
         <div className="icon1">
-          <a href="#Calculate">
+          <Link to="/calculator">
             <img src={Learn} alt="icon" />
             <br /> <br />
             Learn
-          </a>
+          </Link>
           <p>
             With automated emission accounting protocol. Results reveal the
             climate health index of the company.
