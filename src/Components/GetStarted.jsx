@@ -51,7 +51,7 @@ export function GetStarted() {
             value="agreed"
             required
           />
-          I agree to the <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a>.
+          I agree to the <a href="#marketplace">User Agreement</a> and <a href="#marketplace">Privacy Policy</a>.
         </label>
         <Link to="/order-summary">
           <button id="btn-g1">REGISTER</button>

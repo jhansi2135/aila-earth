@@ -33,14 +33,15 @@ export function LogIn() {
         </Link>
         <br />
         <br />
-        <a href="#">Forgot your password?</a>
+        <a href="#marketplace">Forgot your password?</a>
         <br />
 
         <div id="three">
           <p>
-            By logging in you agree to our <a href="#">Terms of Use</a> and
-            acknowledge our <a href="#">Privacy Policy</a>. You also acknowledge
-            that Aila uses cookies to give the best user experience.
+            By logging in you agree to our
+            <a href="#marketplace">Terms of Use</a> and acknowledge our
+            <a href="#marketplace">Privacy Policy</a>. You also acknowledge that
+            Aila uses cookies to give the best user experience.
           </p>
           <p>
             This site is protected by reCAPTCHA Enterprise and Google Privacy

@@ -17,10 +17,10 @@ export function OrderJourney() {
         <li>Contract price</li>
       </ul>
       <p>
-        View <a href="#">terms of service</a>
+        View <a href="#marketplace">terms of service</a>
       </p>
       <p>
-        View <a href="#">Aila user terms</a>
+        View <a href="#marketplace">Aila user terms</a>
       </p>
       <p>
         Next steps: Mobility Company A will contact you you in maximum 24 hours
