@@ -1,5 +1,9 @@
  /ReadMoreAndAct / 200
- /LogIn / 200
- /Register_User / 200
- /Register_Partner / 200
- 
+ /login / 200
+ /calculator / 200
+ /about / 200
+ /resources / 200
+ /get-started / 200
+ /order-summary / 200
+ /partner-with-us / 200
+ /partner-with-us/confirmation / 200
