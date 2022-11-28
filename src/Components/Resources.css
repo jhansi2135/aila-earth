@@ -1,4 +1,4 @@
-.Calculator {
+.Resources {
   background-image: linear-gradient(150deg, orange, purple, rgb(193, 0, 186));
   background-size: cover;
   background-position: center;
@@ -9,7 +9,7 @@
   padding: 15% 20%;
   line-height: 40px;
 }
-#btn-c {
+#btn-r {
   width: 200px;
   height: 35px;
   border-radius: 30px;
