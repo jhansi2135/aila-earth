@@ -28,7 +28,7 @@ export function LogIn() {
           <Google />
         </div>
 
-        <Link to="">
+        <Link to="/order-summary">
           <input type="button" value="Log in" id="button" />
         </Link>
         <br />
@@ -38,9 +38,9 @@ export function LogIn() {
 
         <div id="three">
           <p>
-            By logging in you agree to our <a href="#"> Terms of Use</a> and
-            acknowledge our <a href="#"> Privacy Policy</a>. You also
-            acknowledge that Aila uses cookies to give the best user experience.
+            By logging in you agree to our <a href="#">Terms of Use</a> and
+            acknowledge our <a href="#">Privacy Policy</a>. You also acknowledge
+            that Aila uses cookies to give the best user experience.
           </p>
           <p>
             This site is protected by reCAPTCHA Enterprise and Google Privacy

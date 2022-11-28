@@ -1,0 +1,32 @@
+.OrderJourney {
+  line-height: 30px;
+  margin: 50px 300px;
+}
+.OrderJourney h2,
+.OrderJourney .center {
+  text-align: center;
+}
+.OrderJourney p {
+  line-height: normal;
+  text-align: justify;
+}
+.OrderJourney .center {
+  font-weight: 700;
+}
+.OrderJourney ul {
+  line-height: normal;
+}
+#btn-o {
+  margin: 20px 245px;
+  width: 200px;
+  height: 35px;
+  border-radius: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  background-image: linear-gradient(
+    90deg,
+    rgb(93, 16, 216),
+    rgb(224, 160, 224)
+  );
+  color: white;
+}

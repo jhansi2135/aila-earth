@@ -1,0 +1,9 @@
+.Confirm {
+  text-align: center;
+  margin: 0 350px 150px;
+  padding: 30px;
+  line-height: 70px;
+}
+.Confirm p {
+  line-height: normal;
+}

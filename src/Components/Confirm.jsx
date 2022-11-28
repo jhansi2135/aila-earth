@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./Confirm.css";
 
 export function Confirm() {
   return (
@@ -12,7 +13,9 @@ export function Confirm() {
         In the meanwhile, do get to know our platform. We would be very happy to
         hear your feedback.
       </p>
-      <Link to="/">Back to main page</Link>
+      <Link to="/">
+        <u>Back to main page</u>
+      </Link>
     </div>
   );
 }

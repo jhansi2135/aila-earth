@@ -18,7 +18,7 @@ h1 {
 }
 
 .LogIn #row {
-  padding: 40px 0 10px 40px;
+  padding: 40px 20px 10px 40px;
 }
 .LogIn #col {
   width: 40%;
@@ -33,21 +33,24 @@ h1 {
 
 #button {
   border: 1px solid black;
-  border-radius: 25px;
+  border-radius: 30px;
   background-image: linear-gradient(135deg, #ba19e2, #aa0ce8);
   width: 250px;
   height: 50px;
   color: white;
+  cursor: pointer;
 }
 #button1 {
   border: 1px solid black;
-  border-radius: 25px;
+  border-radius: 30px;
+  margin: 10px 160px;
   background-image: linear-gradient(135deg, #ba19e2, #aa0ce8);
   width: 250px;
   height: 50px;
   color: white;
   text-align: center;
   font-size: 18px;
+  cursor: pointer;
 }
 
 #row #one {
