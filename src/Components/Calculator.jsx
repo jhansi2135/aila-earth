@@ -1,7 +1,10 @@
 export function Calculator() {
   return (
     <div className="Calculator">
-      <p>Coming Soon</p>
+      <p>Something Awesome Is In The Works</p>
+      <p>We will be up and running soon with the new and improved website.</p>
+      <p>We love feedback!</p>
+      <button>CONTACT US</button>
     </div>
   );
 }

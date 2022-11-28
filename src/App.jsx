@@ -7,6 +7,8 @@ import { Calculator } from "./Components/Calculator";
 import { About } from "./Components/About";
 import { Resources } from "./Components/Resources";
 import { GetStarted } from "./Components/GetStarted";
+import { OrderJourney } from "./Components/OrderJourney";
+import { Confirm } from "./Components/Confirm";
 import { PartnerWithUs } from "./Components/PartnerWithUs.jsx";
 
 function App() {
@@ -20,7 +22,12 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/resources" element={<Resources />}></Route>
         <Route path="/get-started" element={<GetStarted />}></Route>
+        <Route path="/order-summary" element={<OrderJourney />}></Route>
         <Route path="/partner-with-us" element={<PartnerWithUs />}></Route>
+        <Route
+          path="/partner-with-us/confirmation"
+          element={<Confirm />}
+        ></Route>
       </Routes>
     </BrowserRouter>
   );
