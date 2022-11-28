@@ -1,3 +1,5 @@
+import "./About.css";
+
 export function About() {
   return (
     <div className="About">
@@ -28,11 +30,13 @@ export function About() {
         a more sustainable business and take concrete climate actions comes from
         the entire value chain, top-down and bottom-up:
       </p>
-      <ul>Taxation & increasing regulation ( EU & local governments)</ul>
-      <ul>Competitiveness & ability to be part of corporate value chains</ul>
-      <ul>Employer image & branding</ul>
-      <ul>Funding and investor relations</ul>
-      <ul>Increasingly conscious consumers</ul>
+      <ul>
+        <li>Taxation & increasing regulation ( EU & local governments)</li>
+        <li>Competitiveness & ability to be part of corporate value chains</li>
+        <li>Employer image & branding</li>
+        <li>Funding and investor relations</li>
+        <li>Increasingly conscious consumers</li>
+      </ul>
       <p>
         Many large corporations are already on board setting net zero targets.
         However, SMEs, representing 90% of business worldwide and being the
@@ -58,17 +62,19 @@ export function About() {
       </p>
       <p>Aila offers SMEs a platform for:</p>
       <ul>
-        Automated emission accounting protocol. Results reveal the climate
-        health index of the company --> LEARN
-      </ul>
-      <ul>
-        A marketplace for a fast and efficient way to shrink carbon footprint by
-        switching to green goods and services. --> ACT
-      </ul>
-      <ul>
-        Reporting and omni-channel shareable content templates to communicate
-        the actions taken. Aila also tracks the SME's climate impact overtime.
-        --> IMPACT
+        <li>
+          Automated emission accounting protocol. Results reveal the climate
+          health index of the company --> LEARN
+        </li>
+        <li>
+          A marketplace for a fast and efficient way to shrink carbon footprint
+          by switching to green goods and services. --> ACT
+        </li>
+        <li>
+          Reporting and omni-channel shareable content templates to communicate
+          the actions taken. Aila also tracks the SME's climate impact overtime.
+          --> IMPACT
+        </li>
       </ul>
       <p>
         We are hard at work continuously developing the platform and finding
@@ -77,7 +83,7 @@ export function About() {
         is from the SME user perspective or a partner looking to cooperate with
         us to increase our offering to SMEs.
       </p>
-      <button>CONTACT US</button>
+      <button id="btn-a">CONTACT US</button>
     </div>
   );
 }

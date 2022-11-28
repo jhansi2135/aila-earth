@@ -1,0 +1,21 @@
+.About {
+  margin: 70px;
+  text-align: justify;
+}
+.About h2 {
+  text-align: center;
+}
+#btn-a {
+  margin: 20px 450px;
+  width: 200px;
+  height: 35px;
+  border-radius: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  background-image: linear-gradient(
+    90deg,
+    rgb(93, 16, 216),
+    rgb(224, 160, 224)
+  );
+  color: white;
+}
