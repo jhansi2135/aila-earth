@@ -1,63 +1,65 @@
 import "./LogIn.css";
+import { Link } from "react-router-dom";
+import { Google } from "./Google.jsx";
 
 export function LogIn() {
   return (
     <div className="LogIn">
-      <h1>Log in</h1>
-      <p>
-        Already a user? Log in to complete transactions and start making an
-        impact.
-      </p>
+      <div id="row">
+        <h1>Log in</h1>
+        <div id="one">
+          <input
+            type="text"
+            id="gradient"
+            name="email"
+            placeholder="Enter your Email"
+            required
+          />
+          <br />
 
-      <div id="one">
-        <input
-          type="text"
-          name="email"
-          placeholder="Enter your Email"
-          required
-        />
-        <br />
-        <br />
-        <input
-          type="text"
-          name="password"
-          placeholder="Enter your Password"
-          required
-        />
-        <br />
-        <br />
+          <input
+            type="text"
+            id="gradient"
+            name="password"
+            placeholder="Enter your Password"
+            required
+          />
+
+          <Google />
+        </div>
+
         <Link to="">
-          <input type="button" value="LogIn" />
+          <input type="button" value="Log in" id="button" />
         </Link>
+        <br />
         <br />
         <a href="#">Forgot your password?</a>
-      </div>
-      <div id="two">
-        <Google />
-      </div>
-      <div id="three">
-        <p>
-          By logging in you agree to our<a href="#">Terms of Use</a> and
-          acknowledge our<a href="#"> Privacy Policy</a>. You also acknowledge
-          that Aila uses cookies to give the best user experience.
-        </p>
+        <br />
 
-        <p>
-          This site is protected by reCAPTCHA Enterprise and Google
-          <a href="#"> Privacy Policy</a> and <a href="#">Terms of Use </a>
-          apply.
-        </p>
-        <p>
-          <b>
-            New to our platform? You can register in few easy steps and after
-            completing any transactions also utilise our reporting and
-            communication tools.
-          </b>
-        </p>
-        <Link to="/Register_Partner">
-          <input type="button" value="REGISTER" />
-        </Link>
+        <div id="three">
+          <p>
+            By logging in you agree to our <a href="#"> Terms of Use</a> and
+            acknowledge our <a href="#"> Privacy Policy</a>. You also
+            acknowledge that Aila uses cookies to give the best user experience.
+          </p>
+          <p>
+            This site is protected by reCAPTCHA Enterprise and Google Privacy
+            Policy and Terms of Use apply.
+          </p>
+          <br />
+          <p id="s">
+            <b>New to our platform? </b>
+          </p>
+          <p>
+            You can register in few easy steps and after completing any
+            transactions also utilise our reporting and communication tools.
+          </p>
+          <Link to="/get-started">
+            <input type="button" value="Register" id="button1" />
+          </Link>
+        </div>
       </div>
+      <div id="col"></div>
     </div>
   );
 }
