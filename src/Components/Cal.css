@@ -27,7 +27,8 @@
 .Cal .icon1 {
   width: 25%;
 }
-.icon a {
+.icon a,
+.icon Link {
   text-align: center;
 }
 .icon1 p {
@@ -35,6 +36,7 @@
   text-align: justify;
   color: #502bd6;
 }
-div a {
+div a,
+div Link {
   color: #ff6648;
 }

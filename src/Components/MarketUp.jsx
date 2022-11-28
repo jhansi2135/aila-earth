@@ -5,15 +5,22 @@ import Foods from "./Foods.png";
 import DigitalServices from "./DigitalServices.png";
 import GreenSupplies from "./GreenSupplies.png";
 import WasteManagement from "./WasteManagement.png";
+import { useState } from "react";
 
 export function MarketUp() {
+  const [searchText, setSearchText] = useState("");
+
   return (
     <div className="MarketUp">
       <h2>
         Remove CO<sub>2</sub> emissions now
       </h2>
       <div className="Search">
-        <input type="text" />
+        <input
+          type="text"
+          value={searchText}
+          onChange={(event) => setSearchText(event.target.value.toLowerCase())}
+        />
         <button>Search</button>
       </div>
       <div className="img">

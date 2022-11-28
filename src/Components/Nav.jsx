@@ -4,14 +4,12 @@ import { Link } from "react-router-dom";
 export function Nav() {
   return (
     <div className="Nav">
-      <Link to="/LogIn">Log In</Link>
-      <Link id="now" to="/">
-        Get Started
-      </Link>
-      <Link to="/Resources">Resources</Link>
-      <Link to="/About">About</Link>
-      <a href="#Market">Marketplace</a>
-      <a href="#Calculate">Calculate</a>
+      <Link to="/logIn">Log In</Link>
+      <Link to="/get-started">Get Started</Link>
+      <Link to="/resources">Resources</Link>
+      <Link to="/about">About</Link>
+      <a href="#marketplace">Marketplace</a>
+      <Link to="/calculator">Calculate</Link>
     </div>
   );
 }
