@@ -30,7 +30,7 @@ export function Cal() {
           </p>
         </div>
         <div className="icon1">
-          <a href="#Market">
+          <a href="#marketplace">
             <img src={Act} alt="icon" />
             <br /> <br />
             Act

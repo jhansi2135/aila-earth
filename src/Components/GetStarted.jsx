@@ -11,41 +11,41 @@ export function GetStarted() {
           your company. This will help us to provide you the best experience and
           tools to track your progress on reducing carbon emissions.
         </p>
-        <label for="company-name">
+        <label for="user-company-name">
           Company name
-          <input id="company-name" type="text" />
+          <input id="user-company-name" type="text" />
         </label>
-        <label for="company-reg-name">
+        <label for="user-company-reg-name">
           Company registration number
-          <input id="company-reg-name" type="text" />
+          <input id="user-company-reg-name" type="text" />
         </label>
-        <label for="company-add">
+        <label for="user-company-add">
           Company address
-          <input id="company-add" type="text" />
+          <input id="user-company-add" type="text" />
         </label>
-        <label for="rep-name">
+        <label for="user-rep-name">
           Name of representative
-          <input id="rep-name" type="text" />
+          <input id="user-rep-name" type="text" />
         </label>
-        <label for="rep-title">
+        <label for="user-rep-title">
           Title of representative
-          <input id="rep-title" type="text" />
+          <input id="user-rep-title" type="text" />
         </label>
-        <label for="email">
+        <label for="user-email">
           Email
-          <input id="email" type="text" />
+          <input id="user-email" type="text" />
         </label>
-        <label for="ph-num">
+        <label for="user-ph-num">
           Phone number
-          <input id="ph-num" type="text" />
+          <input id="user-ph-num" type="text" />
         </label>
-        <label for="industry">
+        <label for="user-industry">
           Industry
-          <input id="industry" type="text" />
+          <input id="user-industry" type="text" />
         </label>
-        <label for="agree" id="ag">
-          <input type="checkbox" id="agree" name="agreed" value="agreed" />I
-          agree to the User Agreement and Privacy Policy.
+        <label for="user-agree" id="ag">
+          <input type="checkbox" id="user-agree" name="agreed" value="agreed" />
+          I agree to the User Agreement and Privacy Policy.
         </label>
         <Link to="/">
           <input id="btn-g1" type="button" value="REGISTER" />
