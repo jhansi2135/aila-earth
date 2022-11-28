@@ -1,4 +1,6 @@
 import "./LogIn.css";
+import { Link } from "react-router-dom";
+import { Google } from "./Google.jsx";
 
 export function LogIn() {
   return (
@@ -54,7 +56,7 @@ export function LogIn() {
             communication tools.
           </b>
         </p>
-        <Link to="/Register_Partner">
+        <Link to="/get-started">
           <input type="button" value="REGISTER" />
         </Link>
       </div>

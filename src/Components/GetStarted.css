@@ -1,0 +1,48 @@
+.GetStarted {
+  display: flex;
+  flex-direction: row;
+}
+.GetStarted .a {
+  width: 80%;
+  padding: 50px 80px;
+  font-weight: 500;
+}
+.GetStarted .b {
+  width: 30%;
+  padding: 15%;
+  font-weight: bolder;
+  color: white;
+  background-image: linear-gradient(150deg, orange, purple);
+}
+.a label {
+  margin: 10px 0;
+  display: block;
+  height: 30px;
+}
+.a input {
+  border: 1px solid black;
+  height: 25px;
+  border-radius: 30px;
+  float: right;
+}
+#ag {
+  margin: 0 60px;
+  display: inline;
+}
+#agree {
+  float: none;
+  width: 12px;
+  margin-right: 20px;
+  position: relative;
+  top: 7px;
+}
+#btn-g1 {
+  display: block;
+}
+.a #p-g {
+  display: block;
+  text-align: center;
+  border: 1px solid black;
+}
+#btn-g {
+}
