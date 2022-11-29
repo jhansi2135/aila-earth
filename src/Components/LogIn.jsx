@@ -38,9 +38,7 @@ export function LogIn() {
 
         <div id="three">
           <p>
-            By logging in you agree to our
-            <a href="#marketplace">Terms of Use</a> and acknowledge our
-            <a href="#marketplace">Privacy Policy</a>. You also acknowledge that
+            By logging in you agree to our <a href="#marketplace">Terms of Use</a> and acknowledge our <a href="#marketplace">Privacy Policy</a>. You also acknowledge that
             Aila uses cookies to give the best user experience.
           </p>
           <p>
