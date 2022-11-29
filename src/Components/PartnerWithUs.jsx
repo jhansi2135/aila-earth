@@ -22,8 +22,6 @@ export function PartnerWithUs() {
     partner_ph_num,
     partner_business_area,
     partner_tell_us,
-    partner_companylogo,
-    partner_confirmation,
   } = partner;
 
   const onInputChange = (event) => {
