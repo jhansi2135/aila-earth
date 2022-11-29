@@ -18,17 +18,20 @@ export function SupplierN(props) {
   return (
     <>
       {details &&
-        details.data.Partner_Details.map((detail) => (
-          <div key={detail.id} className="SupplierN">
-            <img src={detail.partner_companylogo} alt={props.alt} />
-            <div className="p">
-              <p className="p1">{detail.partner_companyName}</p>
-              <p className="p2">{detail.company_product}</p>
-              <p className="p3">{detail.product_shortinfo}</p>
-              <Link to={props.to}>Read more & Act</Link>
-            </div>
-          </div>
-        ))}
+        details.data.Partner_Details.map(
+          (detail) =>
+            detail.partner_confirmation && (
+              <div key={detail.id} className="SupplierN">
+                <img src={detail.partner_companylogo} alt={props.alt} />
+                <div className="p">
+                  <p className="p1">{detail.partner_companyName}</p>
+                  <p className="p2">{detail.partner_business_area}</p>
+                  <p className="p3">{detail.partner_tell_us}</p>
+                  <Link to={props.to}>Read more & Act</Link>
+                </div>
+              </div>
+            )
+        )}
     </>
   );
 }
