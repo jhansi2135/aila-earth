@@ -4,8 +4,17 @@ h1 {
 
 #gradient {
   padding: 10px;
-  border: 1px solid black;
+  border: 2px solid transparent;
   border-radius: 30px;
+  border-image: linear-gradient(
+    90deg,
+    rgb(54, 243, 247),
+    rgb(29, 129, 211),
+    rgb(240, 45, 188)
+  );
+
+  border-image-slice: 1;
+  position: relative;
 }
 
 .LogIn a {
@@ -15,6 +24,8 @@ h1 {
 
 .LogIn {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .LogIn #row {
@@ -32,19 +43,20 @@ h1 {
 }
 
 #button {
-  border: 1px solid black;
+  border: 1px solid transparent;
   border-radius: 30px;
-  background-image: linear-gradient(135deg, #ba19e2, #aa0ce8);
+  background-image: linear-gradient(135deg, #b411e5, rgb(241, 118, 215));
   width: 250px;
   height: 50px;
   color: white;
   cursor: pointer;
+  font-size: 18px;
 }
 #button1 {
-  border: 1px solid black;
+  border: 1px solid transparent;
   border-radius: 30px;
   margin: 10px 160px;
-  background-image: linear-gradient(135deg, #ba19e2, #aa0ce8);
+  background-image: linear-gradient(135deg, #b411e5, rgb(241, 118, 215));
   width: 250px;
   height: 50px;
   color: white;

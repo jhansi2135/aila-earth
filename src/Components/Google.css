@@ -1,1 +1,15 @@
-
+.Google {
+  padding: 1px;
+  padding-left: 2px;
+  padding-right: -5px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  border-image: linear-gradient(
+    90deg,
+    rgb(54, 243, 247),
+    rgb(29, 129, 211),
+    rgb(240, 45, 188)
+  );
+  border-image-slice: 1;
+  position: relative;
+}
