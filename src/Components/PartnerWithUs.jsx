@@ -1,8 +1,10 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./PartnerWithUs.css";
+import { InsertPartners } from "../Fetch";
+import { useNavigate } from "react-router-dom";
 
 export function PartnerWithUs() {
+  let navigate = useNavigate();
   const [partner, setPartner] = useState({
     partner_companyName: "",
     partner_rep_name: "",
@@ -12,7 +14,7 @@ export function PartnerWithUs() {
     partner_business_area: "",
     partner_tell_us: "",
     partner_companylogo: "",
-    partner_confirmation: "",
+    partner_confirmation: false,
   });
   const {
     partner_companyName,
@@ -22,16 +24,29 @@ export function PartnerWithUs() {
     partner_ph_num,
     partner_business_area,
     partner_tell_us,
+    partner_companylogo,
   } = partner;
 
-  const onInputChange = (event) => {
+  const handleInputChange = (event) => {
     setPartner({ ...partner, [event.target.name]: event.target.value });
   };
-
-  const onSubmit = async (event) => {
-    event.preventDefault();
-
-    alert("Data Inserted");
+  const insertPartner = async function (data) {
+    const result = await InsertPartners(data);
+    console.log(result);
+  };
+  const handleSubmit = (event) => {
+    const data = {
+      partner_companyName: { partner_companyName },
+      partner_rep_name: { partner_rep_name },
+      partner_rep_title: { partner_rep_title },
+      partner_email: { partner_email },
+      partner_ph_num: { partner_ph_num },
+      partner_business_area: { partner_business_area },
+      partner_tell_us: { partner_tell_us },
+      partner_companylogo: { partner_companylogo },
+    };
+    insertPartner(data);
+    navigate("/partner-with-us/confirmation");
   };
   return (
     <div className="PartnerWithUs">
@@ -43,7 +58,7 @@ export function PartnerWithUs() {
           partners. Leave us your details and lets discuss how we can make an
           impact!
         </p>
-        <form onSubmit={(event) => onSubmit(event)}>
+        <form onSubmit={handleSubmit}>
           <label for="partner_companyName">
             Company name
             <input
@@ -51,7 +66,8 @@ export function PartnerWithUs() {
               type="text"
               name="partner_companyName"
               value={partner_companyName}
-              onChange={(event) => onInputChange(event)}
+              onChange={handleInputChange}
+              required
             />
           </label>
           <label for="partner_rep_name">
@@ -61,7 +77,8 @@ export function PartnerWithUs() {
               type="text"
               name="partner_rep_name"
               value={partner_rep_name}
-              onChange={(event) => onInputChange(event)}
+              onChange={handleInputChange}
+              required
             />
           </label>
           <label for="partner_rep_title">
@@ -71,7 +88,8 @@ export function PartnerWithUs() {
               type="text"
               name="partner_rep_title"
               value={partner_rep_title}
-              onChange={(event) => onInputChange(event)}
+              onChange={handleInputChange}
+              required
             />
           </label>
           <label for="partner_email">
@@ -81,7 +99,8 @@ export function PartnerWithUs() {
               type="text"
               name="partner_email"
               value={partner_email}
-              onChange={(event) => onInputChange(event)}
+              onChange={handleInputChange}
+              required
             />
           </label>
           <label for="partner_ph_num">
@@ -91,7 +110,8 @@ export function PartnerWithUs() {
               type="text"
               name="partner_ph_num"
               value={partner_ph_num}
-              onChange={(event) => onInputChange(event)}
+              onChange={handleInputChange}
+              required
             />
           </label>
           <label for="partner_business_area">
@@ -101,21 +121,21 @@ export function PartnerWithUs() {
               type="text"
               name="partner_business_area"
               value={partner_business_area}
-              onChange={(event) => onInputChange(event)}
+              onChange={handleInputChange}
+              required
             />
           </label>
           <label for="partner_tell_us">
             Tell us more about the company and products
             <textarea
               id="partner_tell_us"
-              name="partner-tell-us"
+              name="partner_tell_us"
               value={partner_tell_us}
-              onChange={(event) => onInputChange(event)}
+              onChange={handleInputChange}
+              required
             ></textarea>
           </label>
-          <Link to="/partner-with-us/confirmation">
-            <button id="btn-p">SUBMIT</button>
-          </Link>
+          <button id="btn-p">SUBMIT</button>
         </form>
       </div>
       <div className="b">
