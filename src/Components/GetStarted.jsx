@@ -11,42 +11,42 @@ export function GetStarted() {
           your company. This will help us to provide you the best experience and
           tools to track your progress on reducing carbon emissions.
         </p>
-        <label for="user-company-name">
+        <label for="user_company_name">
           Company name
-          <input id="user-company-name" type="text" required />
+          <input id="user_company_name" type="text" required />
         </label>
-        <label for="user-company-reg-name">
+        <label for="user_company_reg_name">
           Company registration number
-          <input id="user-company-reg-name" type="text" required />
+          <input id="user_company_reg_name" type="text" required />
         </label>
-        <label for="user-company-add">
+        <label for="user_company_add">
           Company address
-          <input id="user-company-add" type="text" required />
+          <input id="user_company_add" type="text" required />
         </label>
-        <label for="user-rep-name">
+        <label for="user_rep_name">
           Name of representative
-          <input id="user-rep-name" type="text" required />
+          <input id="user_rep_name" type="text" required />
         </label>
-        <label for="user-rep-title">
+        <label for="user_rep_title">
           Title of representative
-          <input id="user-rep-title" type="text" required />
+          <input id="user_rep_title" type="text" required />
         </label>
-        <label for="user-email">
+        <label for="user_email">
           Email
-          <input id="user-email" type="text" required />
+          <input id="user_email" type="text" required />
         </label>
-        <label for="user-ph-num">
+        <label for="user_ph_num">
           Phone number
-          <input id="user-ph-num" type="text" required />
+          <input id="user_ph_num" type="text" required />
         </label>
-        <label for="user-industry">
+        <label for="user_industry">
           Industry
-          <input id="user-industry" type="text" required />
+          <input id="user_industry" type="text" required />
         </label>
-        <label for="user-agree" id="ag">
+        <label for="user_agree" id="ag">
           <input
             type="checkbox"
-            id="user-agree"
+            id="user_agree"
             name="agreed"
             value="agreed"
             required

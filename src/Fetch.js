@@ -3,10 +3,14 @@ const PARTNER_QUERY = `
     query {
       Partner_Details {
         id
-        partner_companylogo
+        partner_rep_name
         partner_companyName
-        company_product
-        product_shortinfo
+        partner_email
+        partner_business_area
+        partner_tell_us
+        partner_companylogo
+        partner_ph_num
+        partner_confirmation
       }
     }
 `;

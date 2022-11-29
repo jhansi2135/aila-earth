@@ -12,33 +12,33 @@ export function PartnerWithUs() {
           partners. Leave us your details and lets discuss how we can make an
           impact!
         </p>
-        <label for="company-name-partner">
+        <label for="partner_companyName">
           Company name
-          <input id="company-name-partner" type="text" />
+          <input id="partner_companyName" type="text" />
         </label>
-        <label for="partner-rep-name">
+        <label for="partner_rep_name">
           Name of representative
-          <input id="partner-rep-name" type="text" />
+          <input id="partner_rep_name" type="text" />
         </label>
-        <label for="partner-rep-title">
+        <label for="partner_rep_title">
           Title of representative
-          <input id="partner-rep-title" type="text" />
+          <input id="partner_rep_title" type="text" />
         </label>
-        <label for="partner-email">
+        <label for="partner_email">
           Email
-          <input id="partner-email" type="text" />
+          <input id="partner_email" type="text" />
         </label>
-        <label for="partner-ph-num">
+        <label for="partner_ph_num">
           Phone number
-          <input id="partner-ph-num" type="text" />
+          <input id="partner_ph_num" type="text" />
         </label>
-        <label for="partner-business-area">
+        <label for="partner_business_area">
           Business area
-          <input id="partner-business-area" type="text" />
+          <input id="partner_business_area" type="text" />
         </label>
-        <label for="partner-tell-us">
+        <label for="partner_tell_us">
           Tell us more about the company and products
-          <textarea id="partner-tell-us" name="partner-tell-us"></textarea>
+          <textarea id="partner_tell_us" name="partner-tell-us"></textarea>
         </label>
         <Link to="/partner-with-us/confirmation">
           <button id="btn-p">SUBMIT</button>
