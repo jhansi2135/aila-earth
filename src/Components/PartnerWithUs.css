@@ -43,10 +43,6 @@
   border-radius: 30px;
   font-weight: 700;
   cursor: pointer;
-  background-image: linear-gradient(
-    90deg,
-    rgb(93, 16, 216),
-    rgb(224, 160, 224)
-  );
+  background-image: linear-gradient(90deg, #b411e5, rgb(241, 118, 215));
   color: white;
 }

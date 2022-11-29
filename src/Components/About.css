@@ -1,6 +1,12 @@
 .About {
-  margin: 70px;
+  padding: 70px;
   text-align: justify;
+  color: white;
+  background-image: linear-gradient(150deg, orange, purple, rgb(193, 0, 186));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight: 700;
 }
 .About h2 {
   text-align: center;
@@ -12,10 +18,6 @@
   border-radius: 30px;
   font-weight: 700;
   cursor: pointer;
-  background-image: linear-gradient(
-    90deg,
-    rgb(93, 16, 216),
-    rgb(224, 160, 224)
-  );
-  color: white;
+  background-color: white;
+  color: black;
 }
