@@ -1,4 +1,6 @@
 import "./LogIn.css";
+import Back from "./Back.png";
+import Cross from "./Cross.png";
 import { Link } from "react-router-dom";
 import { Google } from "./Google.jsx";
 
@@ -60,7 +62,12 @@ export function LogIn() {
           </Link>
         </div>
       </div>
-      <div id="col"></div>
+      <div id="col"><Link to="/">
+        <img id="back" src={Back} alt="back" />
+      </Link>
+      <Link to="/">
+        <img id="cross" src={Cross} alt="cross" />
+      </Link></div>
     </div>
   );
 }

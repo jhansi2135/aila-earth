@@ -2,6 +2,9 @@ import { useState } from "react";
 import "./PartnerWithUs.css";
 import { InsertPartners } from "../Fetch";
 import { useNavigate } from "react-router-dom";
+import Back from "./Back.png";
+import Cross from "./Cross.png";
+import { Link } from "react-router-dom";
 
 export function PartnerWithUs() {
   let navigate = useNavigate();
@@ -141,6 +144,14 @@ export function PartnerWithUs() {
           <br />
           big impact
         </h1>
+      </div>
+      <div>
+        <Link to="/get-started">
+          <img id="back" src={Back} alt="back" />
+        </Link>
+        <Link to="/">
+          <img id="cross" src={Cross} alt="cross" />
+        </Link>
       </div>
     </div>
   );

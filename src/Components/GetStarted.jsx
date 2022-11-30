@@ -3,6 +3,8 @@ import "./GetStarted.css";
 import { useState } from "react";
 import { InsertUsers } from "../Fetch";
 import { useNavigate } from "react-router-dom";
+import Back from "./Back.png";
+import Cross from "./Cross.png";
 
 export function GetStarted() {
   let navigate = useNavigate();
@@ -130,6 +132,14 @@ export function GetStarted() {
           <br />
           Impact
         </h1>
+      </div>
+      <div>
+      <Link to="/">
+        <img id="back" src={Back} alt="back" />
+      </Link>
+      <Link to="/">
+        <img id="cross" src={Cross} alt="cross" />
+      </Link>
       </div>
     </div>
   );
