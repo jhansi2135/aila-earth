@@ -4,7 +4,7 @@ import { SupplierN } from "./SupplierN";
 // import More from "./More.png";
 // import Less from "./Less.png";
 
-export function MarketDown() {
+export function MarketDown({ searchText }) {
   // const [more, setMore] = useState(true);
   // const handleMoreClick = () => {
   //   setMore(false);
@@ -15,7 +15,7 @@ export function MarketDown() {
   // };
   return (
     <div className="MarketDown">
-      <SupplierN alt="SupplierLogo" />
+      <SupplierN alt="SupplierLogo" searchText={searchText} />
       {/* <div id="more">
         <img src={Less} alt="less" onClick={handleLessClick} />
       </div> */}

@@ -7,8 +7,11 @@ import GreenSupplies from "./GreenSupplies.png";
 import WasteManagement from "./WasteManagement.png";
 import { useState } from "react";
 
-export function MarketUp() {
+export function MarketUp({ onClick }) {
   const [searchText, setSearchText] = useState("");
+  const handleClick = (event) => {
+    onClick(searchText);
+  };
 
   return (
     <div className="MarketUp">
@@ -21,7 +24,7 @@ export function MarketUp() {
           value={searchText}
           onChange={(event) => setSearchText(event.target.value.toLowerCase())}
         />
-        <button>Search</button>
+        <button onClick={handleClick}>Search</button>
       </div>
       <div className="img">
         <div className="icon">

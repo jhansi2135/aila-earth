@@ -18,15 +18,19 @@ export function ReadMoreAndAct(props) {
   return (
     <div key={detail.id} className="ReadMoreAndAct">
       <img src={detail.partner_companylogo} alt={props.alt} />
-      <h5>{detail.partner_companyName}</h5>
-      <p className="p3">{detail.partner_tell_us}</p>
-      <h5>Product Category</h5>
-      <p>{detail.partner_business_area}</p>
-      <h5>Product description</h5>
-      <h5>Standards for quality</h5>
-      {/* <button onClick={handleSubmit}></button> */}
-      <button>Click to purchase and reduce your carbon footprint</button>
-      <h5>Browse other products from Mobility Company A</h5>
+      <div className="yks">
+        <div>
+          <h2>{detail.partner_companyName}</h2>
+          <p className="p3">{detail.partner_tell_us}</p>
+        </div>
+        <h3>Product Category</h3>
+        <p>{detail.partner_business_area}</p>
+        <h3>Product description</h3>
+        <h3>Standards for quality</h3>
+        {/* <button onClick={handleSubmit}></button> */}
+        <button>Click to purchase and reduce your carbon footprint</button>
+        <h5>Browse other products from Mobility Company A</h5>
+      </div>
     </div>
   );
 }

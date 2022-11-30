@@ -15,7 +15,7 @@ export function GetStarted() {
     user_email: "",
     user_ph_num: "",
     user_industry: "",
-    user_agree: false,
+    user_agree: "",
   });
 
   const {user_company_name, user_company_reg_name, user_company_add, user_rep_name, user_rep_title, user_email, user_ph_num, user_industry, user_agree} = user;
@@ -37,7 +37,7 @@ export function GetStarted() {
       user_email: user_email,
       user_ph_num: user_ph_num,
       user_industry: user_industry,
-      user_agree: user_agree,
+      user_agree: true,
     };
     insertUser(data);
     navigate("/order-summary");
@@ -107,7 +107,7 @@ export function GetStarted() {
             id="user_agree"
             name="user_agree"
             value={user_agree}
-            onChange={event => !user_agree}
+            onChange={handleInputChange}
             required
             />
           I agree to the <a href="#marketplace">User Agreement</a> and <a href="#marketplace">Privacy Policy</a>.

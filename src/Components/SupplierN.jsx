@@ -15,10 +15,19 @@ export function SupplierN(props) {
     fetchData();
   }, []);
 
+  const visibleList =
+    details &&
+    details.data.Partner_Details.filter((detail) => {
+      return (
+        detail.partner_companyName.toLowerCase().includes(props.searchText) ||
+        detail.partner_business_area.toLowerCase().includes(props.searchText)
+      );
+    });
+
   return (
     <>
       {details &&
-        details.data.Partner_Details.map(
+        visibleList.map(
           (detail) =>
             detail.partner_confirmation && (
               <div key={detail.id} className="SupplierN">
