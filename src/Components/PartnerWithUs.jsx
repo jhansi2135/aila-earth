@@ -12,7 +12,7 @@ export function PartnerWithUs() {
     partner_business_area: "",
     partner_tell_us: "",
     partner_companylogo: "",
-    partner_confirmation: "",
+    partner_confirmation: false,
   });
   const {
     partner_companyName,
@@ -45,37 +45,80 @@ export function PartnerWithUs() {
           partners. Leave us your details and lets discuss how we can make an
           impact!
         </p>
-        <label for="company-name-partner">
-          Company name
-          <input id="company-name-partner" type="text" />
-        </label>
-        <label for="partner-rep-name">
-          Name of representative
-          <input id="partner-rep-name" type="text" />
-        </label>
-        <label for="partner-rep-title">
-          Title of representative
-          <input id="partner-rep-title" type="text" />
-        </label>
-        <label for="partner-email">
-          Email
-          <input id="partner-email" type="text" />
-        </label>
-        <label for="partner-ph-num">
-          Phone number
-          <input id="partner-ph-num" type="text" />
-        </label>
-        <label for="partner-business-area">
-          Business area
-          <input id="partner-business-area" type="text" />
-        </label>
-        <label for="partner-tell-us">
-          Tell us more about the company and products
-          <textarea id="partner-tell-us" name="partner-tell-us"></textarea>
-        </label>
-        <Link to="/partner-with-us/confirmation">
-          <button id="btn-p">SUBMIT</button>
-        </Link>
+        <form onSubmit={(event) => onSubmit(event)}>
+          <label for="partner_companyName">
+            Company name
+            <input
+              id="partner_companyName"
+              type="text"
+              name="partner_companyName"
+              value={partner_companyName}
+              onChange={(event) => onInputChange(event)}
+            />
+          </label>
+          <label for="partner_rep_name">
+            Name of representative
+            <input
+              id="partner_rep_name"
+              type="text"
+              name="partner_rep_name"
+              value={partner_rep_name}
+              onChange={(event) => onInputChange(event)}
+            />
+          </label>
+          <label for="partner_rep_title">
+            Title of representative
+            <input
+              id="partner_rep_title"
+              type="text"
+              name="partner_rep_title"
+              value={partner_rep_title}
+              onChange={(event) => onInputChange(event)}
+            />
+          </label>
+          <label for="partner_email">
+            Email
+            <input
+              id="partner_email"
+              type="text"
+              name="partner_email"
+              value={partner_email}
+              onChange={(event) => onInputChange(event)}
+            />
+          </label>
+          <label for="partner_ph_num">
+            Phone number
+            <input
+              id="partner_ph_num"
+              type="text"
+              name="partner_ph_num"
+              value={partner_ph_num}
+              onChange={(event) => onInputChange(event)}
+            />
+          </label>
+          <label for="partner_business_area">
+            Business area
+            <input
+              id="partner_business_area"
+              type="text"
+              name="partner_business_area"
+              value={partner_business_area}
+              onChange={(event) => onInputChange(event)}
+            />
+          </label>
+          <label for="partner_tell_us">
+            Tell us more about the company and products
+            <textarea
+              id="partner_tell_us"
+              name="partner_tell_us"
+              value={partner_tell_us}
+              onChange={(event) => onInputChange(event)}
+            ></textarea>
+          </label>
+          <Link to="/partner-with-us/confirmation">
+            <button id="btn-p">SUBMIT</button>
+          </Link>
+        </form>
       </div>
       <div className="b">
         <h1>

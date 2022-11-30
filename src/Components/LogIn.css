@@ -6,6 +6,7 @@ h1 {
   padding: 10px;
   border: 2px solid transparent;
   border-radius: 30px;
+
   border-image: linear-gradient(
     90deg,
     rgb(54, 243, 247),
