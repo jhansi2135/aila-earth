@@ -1,7 +1,40 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import "./PartnerWithUs.css";
 
 export function PartnerWithUs() {
+  const [partner, setPartner] = useState({
+    partner_companyName: "",
+    partner_rep_name: "",
+    partner_rep_title: "",
+    partner_email: "",
+    partner_ph_num: "",
+    partner_business_area: "",
+    partner_tell_us: "",
+    partner_companylogo: "",
+    partner_confirmation: "",
+  });
+  const {
+    partner_companyName,
+    partner_rep_name,
+    partner_rep_title,
+    partner_email,
+    partner_ph_num,
+    partner_business_area,
+    partner_tell_us,
+    partner_companylogo,
+    partner_confirmation,
+  } = partner;
+
+  const onInputChange = (event) => {
+    setPartner({ ...partner, [event.target.name]: event.target.value });
+  };
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+
+    alert("Data Inserted");
+  };
   return (
     <div className="PartnerWithUs">
       <div className="a">
@@ -12,33 +45,33 @@ export function PartnerWithUs() {
           partners. Leave us your details and lets discuss how we can make an
           impact!
         </p>
-        <label for="partner_companyName">
+        <label for="company-name-partner">
           Company name
-          <input id="partner_companyName" type="text" />
+          <input id="company-name-partner" type="text" />
         </label>
-        <label for="partner_rep_name">
+        <label for="partner-rep-name">
           Name of representative
-          <input id="partner_rep_name" type="text" />
+          <input id="partner-rep-name" type="text" />
         </label>
-        <label for="partner_rep_title">
+        <label for="partner-rep-title">
           Title of representative
-          <input id="partner_rep_title" type="text" />
+          <input id="partner-rep-title" type="text" />
         </label>
-        <label for="partner_email">
+        <label for="partner-email">
           Email
-          <input id="partner_email" type="text" />
+          <input id="partner-email" type="text" />
         </label>
-        <label for="partner_ph_num">
+        <label for="partner-ph-num">
           Phone number
-          <input id="partner_ph_num" type="text" />
+          <input id="partner-ph-num" type="text" />
         </label>
-        <label for="partner_business_area">
+        <label for="partner-business-area">
           Business area
-          <input id="partner_business_area" type="text" />
+          <input id="partner-business-area" type="text" />
         </label>
-        <label for="partner_tell_us">
+        <label for="partner-tell-us">
           Tell us more about the company and products
-          <textarea id="partner_tell_us" name="partner-tell-us"></textarea>
+          <textarea id="partner-tell-us" name="partner-tell-us"></textarea>
         </label>
         <Link to="/partner-with-us/confirmation">
           <button id="btn-p">SUBMIT</button>
