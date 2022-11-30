@@ -1,4 +1,7 @@
 import "./ReadMoreAndAct.css";
+import Back from "./Back.png";
+import Cross from "./Cross.png";
+import { Link } from "react-router-dom";
 // import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
@@ -31,6 +34,12 @@ export function ReadMoreAndAct(props) {
         <button>Click to purchase and reduce your carbon footprint</button>
         <h5>Browse other products from Mobility Company A</h5>
       </div>
+      <Link to="/">
+        <img id="back" src={Back} alt="back" />
+      </Link>
+      <Link to="/">
+        <img id="cross" src={Cross} alt="cross" />
+      </Link>
     </div>
   );
 }
