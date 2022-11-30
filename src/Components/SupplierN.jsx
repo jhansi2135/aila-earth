@@ -27,7 +27,9 @@ export function SupplierN(props) {
                   <p className="p1">{detail.partner_companyName}</p>
                   <p className="p2">{detail.partner_business_area}</p>
                   <p className="p3">{detail.partner_tell_us}</p>
-                  <Link to="/ReadMoreAndAct">Read more & Act</Link>
+                  <Link to="/ReadMoreAndAct" state={{ detail: detail }}>
+                    Read more & Act
+                  </Link>
                 </div>
               </div>
             )
