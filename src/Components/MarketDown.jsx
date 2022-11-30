@@ -15,7 +15,7 @@ export function MarketDown() {
   // };
   return (
     <div className="MarketDown">
-      <SupplierN alt="SupplierLogo" to="/ReadMoreAndAct" />
+      <SupplierN alt="SupplierLogo" />
       {/* <div id="more">
         <img src={Less} alt="less" onClick={handleLessClick} />
       </div> */}

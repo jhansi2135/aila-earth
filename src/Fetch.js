@@ -15,9 +15,7 @@ const PARTNER_QUERY = `
       }
     }
 `;
-
 export const fetchPartners = async () => {
-  console.log("fetchPartners");
   const response = await fetch(ENDPOINT_URL, {
     method: "POST",
     body: JSON.stringify({
@@ -26,25 +24,25 @@ export const fetchPartners = async () => {
   });
   return await response.json();
 };
-const INSERT_PARTNER_QUERY = `mutation InsertPartnerDetails($partner_business_area: String, $partner_companyName: String, $partner_companylogo: String, $partner_email: String, $partner_ph_num: String, $partner_rep_name: String, $partner_tell_us: String) {
-  insert_Partner_Details(objects: {partner_business_area: $partner_business_area, partner_companyName: $partner_companyName, partner_companylogo: $partner_companylogo, partner_email: $partner_email, partner_ph_num: $partner_ph_num, partner_rep_name: $partner_rep_name, partner_tell_us: $partner_tell_us}) {
+
+const INSERT_PARTNER_QUERY = `mutation InsertPartnerDetails($partner_rep_name: String, $partner_companyName: String, $partner_email: String, $partner_business_area: String, $partner_tell_us: String, $partner_companylogo: String, $partner_ph_num: String, $partner_rep_title: String) {
+  insert_Partner_Details(objects: {partner_rep_name: $partner_rep_name, partner_companyName: $partner_companyName, partner_email: $partner_email, partner_business_area: $partner_business_area, partner_tell_us: $partner_tell_us, partner_companylogo: $partner_companylogo, partner_ph_num: $partner_ph_num, partner_rep_title: $partner_rep_title}) {
     affected_rows
     returning {
       id
-      partner_rep_title
-			partner_business_area
-			partner_companyName
-			partner_companylogo
-			partner_email
-			partner_ph_num
 			partner_rep_name
+			partner_companyName
+			partner_email
+			partner_business_area
 			partner_tell_us
-      partner_confirmation
+			partner_companylogo
+			partner_ph_num
+			partner_confirmation
+			partner_rep_title
     }
   }
 }`;
 export const InsertPartners = async (data) => {
-  console.log("InsertPartners");
   const response = await fetch(ENDPOINT_URL, {
     method: "POST",
     body: JSON.stringify({
@@ -58,21 +56,20 @@ export const InsertPartners = async (data) => {
 const USER_QUERY = `
 query {
   user_detail {
-  user_agree
-  id
-  user_company_add
-  user_company_name
-  user_company_reg_name
-  user_email
-  user_industry
-  user_ph_num
-  user_rep_name
-  user_rep_title
+    user_agree
+    id
+    user_company_add
+    user_company_name
+    user_company_reg_name
+    user_email
+    user_industry
+    user_ph_num
+    user_rep_name
+    user_rep_title
 }
 }`;
 
 export const fetchUsers = async () => {
-  console.log("fetchUsers");
   const response = await fetch(ENDPOINT_URL, {
     method: "POST",
     body: JSON.stringify({
@@ -82,8 +79,7 @@ export const fetchUsers = async () => {
   return await response.json();
 };
 
-const INSERT_USER_QUERY = `
-mutation InsertUserDetail($user_agree: Boolean, $user_company_add: String, $user_company_name: String, $user_company_reg_name: String, $user_email: String, $user_industry: String, $user_ph_num: String, $user_rep_name: String, $user_rep_title: String) {
+const INSERT_USER_QUERY = `mutation InsertUserDetail($user_agree: Boolean, $user_company_add: String, $user_company_name: String, $user_company_reg_name: String, $user_email: String, $user_industry: String, $user_ph_num: String, $user_rep_name: String, $user_rep_title: String) {
   insert_user_detail(objects: {user_agree: $user_agree, user_company_add: $user_company_add, user_company_name: $user_company_name, user_company_reg_name: $user_company_reg_name, user_email: $user_email, user_industry: $user_industry, user_ph_num: $user_ph_num, user_rep_name: $user_rep_name, user_rep_title: $user_rep_title}) {
     affected_rows
     returning {
@@ -98,9 +94,10 @@ mutation InsertUserDetail($user_agree: Boolean, $user_company_add: String, $user
 			user_rep_name
 			user_rep_title
     }
-  }`;
+  }
+}`;
+
 export const InsertUsers = async (data) => {
-  console.log("InsertUsers");
   const response = await fetch(ENDPOINT_URL, {
     method: "POST",
     body: JSON.stringify({

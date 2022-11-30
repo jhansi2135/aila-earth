@@ -13,8 +13,6 @@ export function PartnerWithUs() {
     partner_ph_num: "",
     partner_business_area: "",
     partner_tell_us: "",
-    partner_companylogo: "",
-    partner_confirmation: false,
   });
   const {
     partner_companyName,
@@ -24,7 +22,6 @@ export function PartnerWithUs() {
     partner_ph_num,
     partner_business_area,
     partner_tell_us,
-    partner_companylogo,
   } = partner;
 
   const handleInputChange = (event) => {
@@ -36,18 +33,18 @@ export function PartnerWithUs() {
   };
   const handleSubmit = (event) => {
     const data = {
-      partner_companyName: { partner_companyName },
-      partner_rep_name: { partner_rep_name },
-      partner_rep_title: { partner_rep_title },
-      partner_email: { partner_email },
-      partner_ph_num: { partner_ph_num },
-      partner_business_area: { partner_business_area },
-      partner_tell_us: { partner_tell_us },
-      partner_companylogo: { partner_companylogo },
+      partner_companyName: partner_companyName,
+      partner_rep_name: partner_rep_name,
+      partner_rep_title: partner_rep_title,
+      partner_email: partner_email,
+      partner_ph_num: partner_ph_num,
+      partner_business_area: partner_business_area,
+      partner_tell_us: partner_tell_us,
     };
     insertPartner(data);
     navigate("/partner-with-us/confirmation");
   };
+
   return (
     <div className="PartnerWithUs">
       <div className="a">
@@ -59,7 +56,7 @@ export function PartnerWithUs() {
           impact!
         </p>
         <form onSubmit={handleSubmit}>
-          <label for="partner_companyName">
+          <label htmlFor="partner_companyName">
             Company name
             <input
               id="partner_companyName"
@@ -70,7 +67,7 @@ export function PartnerWithUs() {
               required
             />
           </label>
-          <label for="partner_rep_name">
+          <label htmlFor="partner_rep_name">
             Name of representative
             <input
               id="partner_rep_name"
@@ -81,7 +78,7 @@ export function PartnerWithUs() {
               required
             />
           </label>
-          <label for="partner_rep_title">
+          <label htmlFor="partner_rep_title">
             Title of representative
             <input
               id="partner_rep_title"
@@ -92,7 +89,7 @@ export function PartnerWithUs() {
               required
             />
           </label>
-          <label for="partner_email">
+          <label htmlFor="partner_email">
             Email
             <input
               id="partner_email"
@@ -103,7 +100,7 @@ export function PartnerWithUs() {
               required
             />
           </label>
-          <label for="partner_ph_num">
+          <label htmlFor="partner_ph_num">
             Phone number
             <input
               id="partner_ph_num"
@@ -114,7 +111,7 @@ export function PartnerWithUs() {
               required
             />
           </label>
-          <label for="partner_business_area">
+          <label htmlFor="partner_business_area">
             Business area
             <input
               id="partner_business_area"
@@ -125,7 +122,7 @@ export function PartnerWithUs() {
               required
             />
           </label>
-          <label for="partner_tell_us">
+          <label htmlFor="partner_tell_us">
             Tell us more about the company and products
             <textarea
               id="partner_tell_us"
