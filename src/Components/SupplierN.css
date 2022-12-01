@@ -26,7 +26,8 @@
   font-weight: bold;
 }
 .SupplierN .p3 {
-  text-align: center;
+  text-align: justify;
+  font-size: small;
 }
 .SupplierN a {
   padding-bottom: 5px;

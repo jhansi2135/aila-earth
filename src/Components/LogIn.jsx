@@ -3,8 +3,23 @@ import Back from "./Back.png";
 import Cross from "./Cross.png";
 import { Link } from "react-router-dom";
 import { Google } from "./Google.jsx";
+// import { useEffect } from "react";
+// import { googleLogout } from "@react-oauth/google";
 
 export function LogIn() {
+  // function handleCallbackResponse(response) {
+
+  // }
+  // useEffect(() => {
+  //   google.accounts.id.initialize({
+  //     client_id: "672246395799-61t60k6v9rlpc28jj7kfr1dd2kp90po4.apps.googleusercontent.com";
+  //     callback: handleCallbackResponse
+  //   });
+  //   google.accounts.id.renderButton(
+  //     document.getElementById("signInDiv"),
+  //     { theme: "outline", size: "large"}
+  //   );
+  // }, []);
   return (
     <div className="LogIn">
       <div id="row">
@@ -26,8 +41,8 @@ export function LogIn() {
             placeholder="Enter your Password"
             required
           />
-
-          <Google />
+<Link to="/order-summary"><Google /></Link>
+          
         </div>
 
         <Link to="/order-summary">
