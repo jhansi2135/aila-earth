@@ -1,4 +1,4 @@
-const ENDPOINT_URL = "https://model-gnu-40.hasura.app/v1/graphql";
+const ENDPOINT_URL = "https://aila-earth.hasura.app/v1/graphql";
 const PARTNER_QUERY = `
     query {
       Partner_Details {

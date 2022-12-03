@@ -14,6 +14,7 @@ export function Google() {
         onError={() => {
           console.log("Login Failed");
         }}
+        shape="pill"
       />
     </div>
   );

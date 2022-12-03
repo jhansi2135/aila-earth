@@ -17,16 +17,10 @@
   cursor: pointer;
   background-color: white;
 }
-#back,
 #cross {
   width: 30px;
   height: 30px;
   position: absolute;
   top: 5px;
-}
-#back {
-  left: 5px;
-}
-#cross {
   right: 5px;
 }

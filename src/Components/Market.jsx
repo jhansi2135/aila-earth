@@ -1,7 +1,7 @@
 import "./Market.css";
 import { MarketUp } from "./MarketUp.jsx";
-import { MarketDown } from "./MarketDown.jsx";
 import { useState } from "react";
+import { SupplierN } from "./SupplierN";
 
 export function Market() {
   const [searchText, setSearchText] = useState("");
@@ -9,7 +9,7 @@ export function Market() {
   return (
     <div id="marketplace">
       <MarketUp onClick={setSearchText} />
-      <MarketDown searchText={searchText} />
+      <SupplierN searchText={searchText} />
     </div>
   );
 }

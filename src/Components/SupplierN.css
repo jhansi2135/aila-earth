@@ -1,3 +1,10 @@
+.MarketDown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 10% 100px 10%;
+  margin: 0;
+}
 .SupplierN {
   width: 200px;
   height: 315px;
@@ -35,4 +42,13 @@
 }
 a {
   text-decoration: none;
+}
+#more > img {
+  width: 30px;
+  height: 30px;
+}
+.MarketDown #more {
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
 }

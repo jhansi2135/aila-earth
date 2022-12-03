@@ -6,13 +6,13 @@ import More from "./More.png";
 import Less from "./Less.png";
 
 export function SupplierN(props) {
-  const [more, setmore] = useState(true);
+  const [more, setMore] = useState(true);
   const handleMoreClick = () => {
-    setmore(false);
+    setMore(false);
   };
 
   const handleLessClick = () => {
-    setmore(true);
+    setMore(true);
   };
 
   const [details, setDetails] = useState();
@@ -38,7 +38,7 @@ export function SupplierN(props) {
   const topList = more ? visibleList && visibleList.slice(0, 3) : visibleList;
 
   return (
-    <>
+    <div className="MarketDown">
       {details &&
         topList.map(
           (detail) =>
@@ -66,6 +66,6 @@ export function SupplierN(props) {
           <img src={Less} alt="less" onClick={handleLessClick} />
         </div>
       )}
-    </>
+    </div>
   );
 }

@@ -1,5 +1,4 @@
 import "./OrderJourney.css";
-import Back from "./Back.png";
 import Cross from "./Cross.png";
 import { Link } from "react-router-dom";
 
@@ -30,9 +29,6 @@ export function OrderJourney() {
         to conclude the contract.
       </p>
       <button id="btn-o">ORDER</button>
-      <Link to="/">
-        <img id="back" src={Back} alt="back" />
-      </Link>
       <Link to="/">
         <img id="cross" src={Cross} alt="cross" />
       </Link>
