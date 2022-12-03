@@ -35,7 +35,7 @@ export function ReadMoreAndAct(props) {
     details &&
     details.data.Partner_Details.filter((detail) => {
       return detail.partner_business_area.includes(
-        document.getElementById("fetch")
+        document.getElementById("fetch").innerHTML
       );
     });
 
