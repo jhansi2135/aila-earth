@@ -31,6 +31,14 @@ export function ReadMoreAndAct(props) {
   //   }
   // };
 
+  const fetchList =
+    details &&
+    details.data.Partner_Details.filter((detail) => {
+      return detail.partner_business_area.includes(
+        document.getElementById("fetch")
+      );
+    });
+
   return (
     <div key={detail.id} className="ReadMoreAndAct">
       <img className="img" src={detail.partner_companylogo} alt={props.alt} />
@@ -83,7 +91,7 @@ export function ReadMoreAndAct(props) {
           </h3>
           <div className="cards">
             {details &&
-              details.data.Partner_Details.map(
+              fetchList.map(
                 (detail) =>
                   detail.partner_confirmation && (
                     <div key={detail.id} className="card">
