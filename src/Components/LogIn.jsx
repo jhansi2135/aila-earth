@@ -24,7 +24,7 @@ export function LogIn() {
             placeholder="Enter your Password"
             required
           />
-          <Link to="/order-summary"><Google /></Link>
+          <Google />
         </div>
         <Link to="/order-summary">
           <input type="button" value="Log in" id="button" />
@@ -44,7 +44,7 @@ export function LogIn() {
           </p>
           <br />
           <p id="s">
-            <b>New to our platform? </b>
+            <b>New to our platform?</b>
           </p>
           <p>
             You can register in few easy steps and after completing any
