@@ -34,8 +34,13 @@ export function ReadMoreAndAct(props) {
   const fetchList =
     details &&
     details.data.Partner_Details.filter((detail) => {
-      return detail.partner_business_area.includes(
-        document.getElementById("fetch").innerHTML
+      return (
+        detail.partner_business_area.includes(
+          document.getElementById("fetch").innerHTML
+        ) &&
+        !detail.partner_companyName.includes(
+          document.getElementById("notfetch").innerHTML
+        )
       );
     });
 
@@ -44,7 +49,7 @@ export function ReadMoreAndAct(props) {
       <img className="img" src={detail.partner_companylogo} alt={props.alt} />
       <div className="yks">
         <div>
-          <h2>{detail.partner_companyName}</h2>
+          <h2 id="notfetch">{detail.partner_companyName}</h2>
           <p>{detail.partner_tell_us}</p>
         </div>
         <div>
