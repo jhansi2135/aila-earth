@@ -2,8 +2,19 @@ import "./SupplierN.css";
 import { Link } from "react-router-dom";
 import { fetchPartners } from "../Fetch";
 import { useState, useEffect } from "react";
+import More from "./More.png";
+import Less from "./Less.png";
 
 export function SupplierN(props) {
+  const [more, setMore] = useState(true);
+  const handleMoreClick = () => {
+    setMore(false);
+  };
+
+  const handleLessClick = () => {
+    setMore(true);
+  };
+
   const [details, setDetails] = useState();
 
   const fetchData = async function () {
@@ -24,10 +35,12 @@ export function SupplierN(props) {
       );
     });
 
+  const topList = more ? visibleList && visibleList.slice(0, 3) : visibleList;
+
   return (
-    <>
+    <div className="MarketDown">
       {details &&
-        visibleList.map(
+        topList.map(
           (detail) =>
             detail.partner_confirmation && (
               <div key={detail.id} className="SupplierN">
@@ -43,6 +56,16 @@ export function SupplierN(props) {
               </div>
             )
         )}
-    </>
+      {more && (
+        <div id="more">
+          <img src={More} alt="more" onClick={handleMoreClick} />
+        </div>
+      )}
+      {!more && (
+        <div id="more">
+          <img src={Less} alt="less" onClick={handleLessClick} />
+        </div>
+      )}
+    </div>
   );
 }

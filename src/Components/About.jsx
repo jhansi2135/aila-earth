@@ -1,5 +1,4 @@
 import "./About.css";
-import Back from "./Back.png";
 import Cross from "./Cross.png";
 import { Link } from "react-router-dom";
 
@@ -87,9 +86,6 @@ export function About() {
         us to increase our offering to SMEs.
       </p>
       <button id="btn-a">CONTACT US</button>
-      <Link to="/">
-        <img id="back" src={Back} alt="back" />
-      </Link>
       <Link to="/">
         <img id="cross" src={Cross} alt="cross" />
       </Link>

@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./Confirm.css";
-import Back from "./Back.png";
 import Cross from "./Cross.png";
 
 export function Confirm() {
@@ -17,9 +16,6 @@ export function Confirm() {
       </p>
       <Link to="/">
         <u>Back to main page</u>
-      </Link>
-      <Link to="/partner-with-us">
-        <img id="back" src={Back} alt="back" />
       </Link>
       <Link to="/">
         <img id="cross" src={Cross} alt="cross" />

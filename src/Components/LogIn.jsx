@@ -1,5 +1,4 @@
 import "./LogIn.css";
-import Back from "./Back.png";
 import Cross from "./Cross.png";
 import { Link } from "react-router-dom";
 import { Google } from "./Google.jsx";
@@ -18,7 +17,6 @@ export function LogIn() {
             required
           />
           <br />
-
           <input
             type="text"
             id="gradient"
@@ -26,10 +24,8 @@ export function LogIn() {
             placeholder="Enter your Password"
             required
           />
-
           <Google />
         </div>
-
         <Link to="/order-summary">
           <input type="button" value="Log in" id="button" />
         </Link>
@@ -37,12 +33,9 @@ export function LogIn() {
         <br />
         <a href="#marketplace">Forgot your password?</a>
         <br />
-
         <div id="three">
           <p>
-            By logging in you agree to our
-            <a href="#marketplace">Terms of Use</a> and acknowledge our
-            <a href="#marketplace">Privacy Policy</a>. You also acknowledge that
+            By logging in you agree to our <a href="#marketplace">Terms of Use</a> and acknowledge our <a href="#marketplace">Privacy Policy</a>. You also acknowledge that
             Aila uses cookies to give the best user experience.
           </p>
           <p>
@@ -51,7 +44,7 @@ export function LogIn() {
           </p>
           <br />
           <p id="s">
-            <b>New to our platform? </b>
+            <b>New to our platform?</b>
           </p>
           <p>
             You can register in few easy steps and after completing any
@@ -62,12 +55,11 @@ export function LogIn() {
           </Link>
         </div>
       </div>
-      <div id="col"><Link to="/">
-        <img id="back" src={Back} alt="back" />
-      </Link>
+      <div id="col">
+      </div>
       <Link to="/">
         <img id="cross" src={Cross} alt="cross" />
-      </Link></div>
+      </Link>
     </div>
   );
 }

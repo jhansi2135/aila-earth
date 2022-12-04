@@ -1,6 +1,7 @@
 import "./Google.css";
 import { GoogleLogin } from "@react-oauth/google";
 import jwt_decode from "jwt-decode";
+import { googleLogout } from "@react-oauth/google";
 
 export function Google() {
   return (
@@ -14,7 +15,9 @@ export function Google() {
         onError={() => {
           console.log("Login Failed");
         }}
+        shape="pill"
       />
+      {googleLogout()}
     </div>
   );
 }
