@@ -105,7 +105,11 @@ export function ReadMoreAndAct(props) {
                         <p className="p1">{detail.partner_companyName}</p>
                         <p className="p2">{detail.partner_business_area}</p>
                         <p className="p3">{detail.partner_tell_us}</p>
-                        <Link to="/ReadMoreAndAct" state={{ detail: detail }}>
+                        <Link
+                          onClick={() => window.location.reload(false)}
+                          to="/ReadMoreAndAct"
+                          state={{ detail: detail }}
+                        >
                           Read more & Act
                         </Link>
                       </div>
