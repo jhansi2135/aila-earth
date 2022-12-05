@@ -42,7 +42,9 @@ export function OrderJourney({ userInfo, setUserInfo }) {
               <img src={userInfo.picture} alt="gmailPicture" />
             </button>
             <div className="dropdown-content">
-              <Link to="/order-summary">{userInfo.name}</Link>
+              <Link to="/order-summary" id="link">
+                {userInfo.name}
+              </Link>
               <button onClick={handleUserInfoClick}>Log out</button>
             </div>
           </div>

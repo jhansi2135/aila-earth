@@ -66,16 +66,16 @@ export function About() {
       <ul>
         <li>
           Automated emission accounting protocol. Results reveal the climate
-          health index of the company --> LEARN
+          health index of the company --{">"} LEARN
         </li>
         <li>
           A marketplace for a fast and efficient way to shrink carbon footprint
-          by switching to green goods and services. --> ACT
+          by switching to green goods and services. --{">"} ACT
         </li>
         <li>
           Reporting and omni-channel shareable content templates to communicate
           the actions taken. Aila also tracks the SME's climate impact overtime.
-          --> IMPACT
+          --{">"} IMPACT
         </li>
       </ul>
       <p>
@@ -85,7 +85,12 @@ export function About() {
         is from the SME user perspective or a partner looking to cooperate with
         us to increase our offering to SMEs.
       </p>
-      <button id="btn-a">CONTACT US</button>
+      <button
+        id="btn-a"
+        onClick={() => (window.location = "mailto:yourmail@domain.com")}
+      >
+        CONTACT US
+      </button>
       <Link to="/">
         <img id="cross" src={Cross} alt="cross" />
       </Link>

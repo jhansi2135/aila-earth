@@ -20,46 +20,43 @@
 .Nav a:hover {
   color: #ff6648;
 }
-.dropdown {
-  float: right;
-  overflow: hidden;
+.dropbtn img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
 }
 .dropdown .dropbtn {
-  border: none;
-  outline: none;
   color: black;
-  padding: 14px 16px;
-  font-size: inherit;
+  width: 90px;
+  height: 50px;
   background-color: white;
-  font-family: inherit;
+  border-radius: 0;
   margin: 0;
   cursor: pointer;
 }
-.dropbtn:hover {
-  color: blue;
+.dropbtn:hover,
+.dropdown button:hover {
+  color: #ff6648;
 }
-.dropdown:hover .dropbtn {
-  background-color: #dcdcdcc8;
+.dropdown button {
+  background-color: white;
+  margin: 10px;
+  font-size: inherit;
 }
+
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 100px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  right: 0;
+  background-color: white;
+  min-width: 70px;
+  text-align: left;
 }
 .dropdown-content a {
   float: none;
   color: black;
-  padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
