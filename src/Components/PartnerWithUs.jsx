@@ -58,7 +58,7 @@ export function PartnerWithUs() {
           impact!
         </p>
         <form onSubmit={handleSubmit}>
-          <label htmlFor="partner_companyName">
+          <label For="partner_companyName">
             Company name
             <input
               id="partner_companyName"
