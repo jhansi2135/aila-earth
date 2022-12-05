@@ -3,7 +3,8 @@ import Cross from "./Cross.png";
 import { Link } from "react-router-dom";
 import { Google } from "./Google.jsx";
 
-export function LogIn() {
+export function LogIn({setUserInfo}) {
+  
   return (
     <div className="LogIn">
       <div id="row">
@@ -24,7 +25,7 @@ export function LogIn() {
             placeholder="Enter your Password"
             required
           />
-          <Google />
+          <Google setUserInfo={setUserInfo}/>
         </div>
         <Link to="/order-summary">
           <input type="button" value="Log in" id="button" />

@@ -2,12 +2,15 @@ import "./OrderJourney.css";
 import Cross from "./Cross.png";
 import { Link } from "react-router-dom";
 
-export function OrderJourney() {
+export function OrderJourney({ userInfo, setUserInfo }) {
+  const handleUserInfoClick = () => {
+    setUserInfo();
+  };
   return (
     <div className="OrderJourney">
       <h2>Complete your order</h2>
       <p className="center">
-        Great (USER NAME), you are almost there in directly reducing your CO
+        Great {userInfo.name}, you are almost there in directly reducing your CO
         <sub>2</sub> emissions!
       </p>
       <p>Summary of your order:</p>
@@ -32,6 +35,17 @@ export function OrderJourney() {
       <Link to="/">
         <img id="cross" src={Cross} alt="cross" />
       </Link>
+      <div className="user">
+        {userInfo.email_verified && (
+          <div className="dropdown">
+            <button className="dropbtn">{userInfo.picture}</button>
+            <div className="dropdown-content">
+              <Link to="/order-summary">{userInfo.name}</Link>
+              <button onClick={handleUserInfoClick}>Log out</button>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

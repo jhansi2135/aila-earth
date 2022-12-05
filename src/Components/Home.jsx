@@ -4,13 +4,13 @@ import { Cal } from "./Cal.jsx";
 import { Image } from "./Image.jsx";
 import { Market } from "./Market.jsx";
 
-export function Home() {
+export function Home({ userInfo, setUserInfo }) {
   return (
     <div className="App">
-      <Nav />
+      <Nav userInfo={userInfo} setUserInfo={setUserInfo} />
       <Image />
       <Cal />
-      <Market />
+      <Market userInfo={userInfo} setUserInfo={setUserInfo} />
     </div>
   );
 }
