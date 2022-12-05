@@ -105,6 +105,7 @@ export function GetStarted() {
             value={user_industry}
             onChange={handleInputChange} required />
           </label>
+          <br/>
           <label htmlFor="user_agree" id="ag">
             <input
             type="checkbox"
@@ -114,7 +115,6 @@ export function GetStarted() {
             onChange={handleInputChange}
             required
             />
-            <br/>
           I agree to the <a href="#marketplace">User Agreement</a> and <a href="#marketplace">Privacy Policy</a>.
           </label>
           <button id="btn-g1">REGISTER</button>
