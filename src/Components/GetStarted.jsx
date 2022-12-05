@@ -48,11 +48,14 @@ export function GetStarted() {
     <div className="GetStarted">
       <div className="a">
         <h2>Register</h2>
+        <br/>
+        <br/>
         <p>
           Start your sustainability journey by providing us few details about
           your company. This will help us to provide you the best experience and
           tools to track your progress on reducing carbon emissions.
         </p>
+        <br/>
         <form onSubmit={handleSubmit}>
           <label htmlFor="user_company_name">
             Company name
@@ -111,6 +114,7 @@ export function GetStarted() {
             onChange={handleInputChange}
             required
             />
+            <br/>
           I agree to the <a href="#marketplace">User Agreement</a> and <a href="#marketplace">Privacy Policy</a>.
           </label>
           <button id="btn-g1">REGISTER</button>
