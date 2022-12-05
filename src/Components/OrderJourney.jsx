@@ -9,6 +9,7 @@ export function OrderJourney({ userInfo, setUserInfo }) {
   return (
     <div className="OrderJourney">
       <h2>Complete your order</h2>
+      <br />
       <p className="center">
         Great {userInfo.name}, you are almost there in directly reducing your CO
         <sub>2</sub> emissions!
@@ -45,7 +46,9 @@ export function OrderJourney({ userInfo, setUserInfo }) {
               <Link to="/order-summary" id="link">
                 {userInfo.name}
               </Link>
-              <button onClick={handleUserInfoClick}>Log out</button>
+              <Link to="/">
+                <button onClick={handleUserInfoClick}>Log out</button>
+              </Link>
             </div>
           </div>
         )}
