@@ -49,7 +49,7 @@ function App() {
             userInfo ? (
               <OrderJourney userInfo={userInfo} setUserInfo={setUserInfo} />
             ) : (
-              <LogIn setUserInfo={setUserInfo} />
+              <Navigate to="/login" />
             )
           }
         ></Route>
