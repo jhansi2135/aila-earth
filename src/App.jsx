@@ -46,7 +46,11 @@ function App() {
         <Route
           path="/order-summary"
           element={
-            <OrderJourney userInfo={userInfo} setUserInfo={setUserInfo} />
+            userInfo ? (
+              <OrderJourney userInfo={userInfo} setUserInfo={setUserInfo} />
+            ) : (
+              <LogIn setUserInfo={setUserInfo} />
+            )
           }
         ></Route>
         <Route path="/partner-with-us" element={<PartnerWithUs />}></Route>
