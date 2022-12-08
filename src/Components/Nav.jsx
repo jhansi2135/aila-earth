@@ -20,7 +20,7 @@ export function Nav({ userInfo, setUserInfo }) {
             </div>
           </div>
         ) : (
-          <Link to="/logIn">Log In</Link>
+          <Link to="/login">Log In</Link>
         )}
       </div>
 
