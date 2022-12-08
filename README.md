@@ -1,10 +1,10 @@
 # Aila : Carbon Reduction Startup
 
-This prototype was created by Humera Banoo, Garipally Jhansi
+This prototype was created by Humera Banoo, Garipally Jhansi.
 
 ## About Aila
 
-Aila is a carbon reduction startup based in Helsinki, with a mission to tackle carbon footprints. Aila is developing a platform to help organizations become aware of their emissions and impact immediately. Aila is especially targeted for SMEs (Small and midsize enterprises) who are mostly into generating revenue and are not aware of their own carbon footprint. Also, sometimes they do not have an immediate solution to tackle their carbon footprint. The platform consists of
+Aila is a carbon reduction startup based in Helsinki, with a mission to tackle carbon footprints. Aila is developing a platform to help organizations become aware of their emissions and impact immediately. Aila is especially targeted for SMEs (Small and midsize enterprises) who are mostly into generating revenue and are not aware of their own carbon footprint. Also, sometimes they do not have an immediate solution to tackle their carbon footprint. The platform consists of:
 - Carbon calculator
 - Marketplace
 - Academy
@@ -14,7 +14,7 @@ Aila is a carbon reduction startup based in Helsinki, with a mission to tackle c
 
 Our task was to create the marketplace for this platform, where suppliers and users could meet.
 
-Users, who could search for an optimal solution for carbon reduction from different list of suppliers
+Users, who could search for an optimal solution for carbon reduction from different list of suppliers.
 
 ## Getting Started with Create React App
 
