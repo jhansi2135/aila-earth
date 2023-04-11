@@ -1,6 +1,6 @@
 # Aila : Carbon Reduction Startup
 
-This prototype was created by Humera Banoo, Garipally Jhansi.
+This prototype was created by  Garipally Jhansi,Humera Banoo.
 
 ## About Aila
 
